@@ -1,3 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #00ADE7;
+  --secondary: #151B72;
+}
+
 html,
 body {
   padding: 0;
