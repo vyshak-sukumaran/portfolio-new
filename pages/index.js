@@ -1,9 +1,15 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { useRouter } from 'next/router'
+import About from '../components/about/About'
+import Contact from '../components/contact/Contact'
 import Landing from '../components/home/Landing'
 import Navbar from '../components/nav/Navbar'
+import Projects from '../components/projects/Projects'
+import Skills from '../components/skills/Skills'
 import styles from '../styles/Index.module.css'
+import GitIcon from '../assets/git.svg'
+import TwitterIcon from '../assets/twitter.svg'
+import InIcon from '../assets/in.svg'
 
 export default function Home() {
   const router = useRouter()
@@ -43,28 +49,37 @@ export default function Home() {
           <meta property="article:published_time" content={meta.date} />
         )}
 
-        
+
       </Head>
 
       <main>
         <Navbar />
 
-        
+
         <Landing />
+
+        <About />
+
+        <Skills />
+
+        <Projects />
+
+        <Contact />
       </main>
 
-      {/* <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer> */}
+      <footer className="w-full h-32 bg-secondary flex justify-center">
+        <ul className='list-none w-80 flex items-center text-white justify-between'>
+          <li>
+            <GitIcon className="w-6 h-6" />
+          </li>
+          <li>
+            <TwitterIcon className="w-6 h-6" />
+          </li>
+          <li>
+            <InIcon className="w-6 h-6" />
+          </li>
+        </ul>
+      </footer>
     </div>
 
 

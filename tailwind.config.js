@@ -9,15 +9,17 @@ module.exports = {
       primary: '#00ADE7',
       secondary: '#151B72',
       white: '#ffffff',
-      moon: '#f4fafc'
+      moon: '#f4fafc',
+      transparent: 'transparent'
     },
     fontFamily: {
       rubik: ['Rubik', 'sans-serif'],
-      funky: ['Luckiest Guy', 'cursive']
+      funky: ['Luckiest Guy', 'cursive'],
+      sora: ['Sora', 'sans-serif']
     },
     extend: {
       boxShadow: {
-        'nav': '-4px 4px 4px #00ADE7',
+        'blue': '-4px 4px 4px #00ADE7',
       },
       blur: {
         xs: '2px',
@@ -30,18 +32,18 @@ module.exports = {
       },
       keyframes: {
         slide: {
-          '0%' : { transform : 'translateX(0)'},
-          '100%' : { transform : 'translateX(1rem)'}
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(1rem)' }
         },
         wob: {
-          '0%' : { transform : 'scaleX(1) scaleY(1)'},
-          '50%' : { transform : 'scaleX(0.7) scaleY(1.3)'},
-          '100%' : { transform : 'scaleX(1) scaleY(1)'},
+          '0%': { transform: 'scaleX(1) scaleY(1)' },
+          '50%': { transform: 'scaleX(0.7) scaleY(1.3)' },
+          '100%': { transform: 'scaleX(1) scaleY(1)' },
         },
         spin: {
           'to': {
             transform: 'rotate(360deg)',
-        }
+          }
         }
       }
     },

@@ -1,13 +1,13 @@
 import React from 'react'
 import AnimatedTitles from './AnimatedTitles'
-import CarIcon from '../../public/car.svg'
-import GlassIcon from '../../public/glass.svg'
-import BallIcon from '../../public/football.svg'
+import CarIcon from '../../assets/car.svg'
+import GlassIcon from '../../assets/glass.svg'
+import BallIcon from '../../assets/football.svg'
 
 const Landing = () => {
 
   return (
-    <div className='w-full h-screen min-h-[760px) relative'>
+    <div className='w-full h-screen min-h-[600px] relative'>
 
       <div className='w-fit h-96 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-2'>
         <AnimatedTitles />

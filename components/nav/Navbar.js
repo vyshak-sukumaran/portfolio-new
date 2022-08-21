@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import HamburgerIcon from '../../public/hamburger.svg'
-import HomeIcon from '../../public/home.svg'
-import AboutIcon from '../../public/about.svg'
-import SkillsIcon from '../../public/skills.svg'
-import ProjectsIcon from '../../public/projects.svg'
-import ContactIcon from '../../public/contact.svg'
+import HamburgerIcon from '../../assets/hamburger.svg'
+import HomeIcon from '../../assets/home.svg'
+import AboutIcon from '../../assets/about.svg'
+import SkillsIcon from '../../assets/skills.svg'
+import ProjectsIcon from '../../assets/projects.svg'
+import ContactIcon from '../../assets/contact.svg'
 import HamburgerButton from '../buttons/HamburgerButton'
 import ClassicButton from '../buttons/ClassicButton'
 
@@ -33,7 +33,7 @@ const Navbar = () => {
 
     return (
         <nav className='fixed top-0 left-0 w-fit p-2 z-10'>
-            <ul className='flex flex-col gap-3'>
+            <ul className='flex flex-col gap-3 list-none'>
                 <li className='flex gap-2 items-center justify-center relative'>
                     <HamburgerButton
                         isOpen={isOpen}
@@ -51,7 +51,7 @@ const Navbar = () => {
                     >
                         <HomeIcon className="w-6 h-6" />
                     </ClassicButton>
-                    <div className={`${!isOpen ? "hidden" : "block"} animate-slide-in absolute -mr-28 text-primary font-medium`}>Home</div>
+                    <div className={`${!isOpen ? "hidden" : "block"} animate-slide-in absolute -mr-28 text-secondary font-medium`}>Home</div>
                 </li>
                 <li className='flex gap-2 items-center justify-center relative'>
                     <ClassicButton 
@@ -60,7 +60,7 @@ const Navbar = () => {
                     >
                         <AboutIcon className="w-6 h-6" />
                     </ClassicButton>
-                    <div className={`${!isOpen ? "hidden" : "block"} animate-slide-in absolute -mr-28 text-primary font-medium`}>About</div>
+                    <div className={`${!isOpen ? "hidden" : "block"} animate-slide-in absolute -mr-28 text-secondary font-medium`}>About</div>
                 </li>
                 <li className='flex gap-2 items-center justify-center relative'>
                     <ClassicButton 
@@ -69,7 +69,7 @@ const Navbar = () => {
                     >
                         <SkillsIcon className="w-6 h-6" />
                     </ClassicButton>
-                    <div className={`${!isOpen ? "hidden" : "block"} animate-slide-in absolute -mr-28 text-primary font-medium`}>Skills</div>
+                    <div className={`${!isOpen ? "hidden" : "block"} animate-slide-in absolute -mr-28 text-secondary font-medium`}>Skills</div>
                 </li>
                 <li className='flex gap-2 items-center justify-center relative'>
                     <ClassicButton 
@@ -78,7 +78,7 @@ const Navbar = () => {
                     >
                         <ProjectsIcon className="w-6 h-6" />
                     </ClassicButton>
-                    <div className={`${!isOpen ? "hidden" : "block"} animate-slide-in absolute -mr-32 text-primary font-medium`}>Projects</div>
+                    <div className={`${!isOpen ? "hidden" : "block"} animate-slide-in absolute -mr-32 text-secondary font-medium`}>Projects</div>
                 </li>
                 <li className='flex gap-2 items-center justify-center relative'>
                     <ClassicButton 
@@ -87,7 +87,7 @@ const Navbar = () => {
                     >
                         <ContactIcon className="w-6 h-6" />
                     </ClassicButton>
-                    <div className={`${!isOpen ? "hidden" : "block"} animate-slide-in absolute -mr-32 text-primary font-medium`}>Contact</div>
+                    <div className={`${!isOpen ? "hidden" : "block"} animate-slide-in absolute -mr-32 text-secondary font-medium`}>Contact</div>
                 </li>
             </ul>
         </nav>

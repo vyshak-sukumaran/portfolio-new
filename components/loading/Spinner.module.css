@@ -39,7 +39,7 @@
     
 
     animation: rotation 1s infinite linear;
-    /* animation-iteration-count: 2; */
+    animation-iteration-count: 1;
 }
 @keyframes rotation {
     from {

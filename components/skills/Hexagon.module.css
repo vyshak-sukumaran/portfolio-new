@@ -1,0 +1,51 @@
+.main {
+    display: flex;
+    --s: 150px;
+    /* size  */
+    --m: 2px;
+    /* margin */
+    --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+}
+
+.wrapper {
+    font-size: 0;
+    /*disable white space between inline block element */
+}
+
+.hex {
+    width: var(--s);
+    margin: var(--m);
+    height: calc(var(--s)*1.1547);
+    display: inline-block;
+    font-size: initial;
+    position: relative;
+    margin-bottom: calc(var(--m) - var(--s)*0.2885);
+}
+
+.hex svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.hex span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Sora', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--secondary);
+    text-align: center;
+    
+}
+
+.wrapper::before {
+    background-color: var(--primary); /* TODO: remove this line */
+    content: "";
+    width: calc(var(--s)/2 + var(--m));
+    float: left;
+    height: 120%;
+    shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px),
+            #000 0 var(--f));
+}

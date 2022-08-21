@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const ClassicButton = ({ children, type, handleClick, icon }) => {
+const ClassicButton = ({ children, type, handleClick, icon, small }) => {
     return (
-        <div className={`relative ${icon ? 'w-14 h-14': 'w-32 h-16'}`}>
+        <div className={`relative ${icon ? 'w-14 h-14': small ? 'w-28 h-12': 'w-32 h-16'}`}>
             <button
                 type={type ? type : "button"}
                 className="w-[calc(100%-0.2rem)] h-[calc(100%-0.2rem)] rounded-full text-center flex justify-center items-center border-[3px] border-secondary text-secondary font-semibold z-10 absolute top-0 right-0 bg-white transition-all ease-in-out duration-150 hover:bg-moon active:bg-moon active:top-[0.2rem] active:right-[0.2rem]"
