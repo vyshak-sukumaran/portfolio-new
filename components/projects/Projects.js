@@ -4,39 +4,50 @@ import ClassicButton from '../buttons/ClassicButton'
 
 const Projects = () => {
   return (
-    <div className='w-full min-h-[600px] relative bg-white pt-32 pb-5'>
-      <div className="w-full h-52 absolute top-0 left-0 bg-primary"></div>
-      <div className="w-1/2 min-h-[24rem] mx-auto relative bg-white border-[1px] rounded-xl border-primary">
-        <h1 className="text-4xl font-bold font-rubik text-secondary text-center block mt-4">
+    <div id='projects' className='w-full min-h-[700px] relative pt-32 pb-5'>
+      <div className="w-2/3 min-h-[24rem] mx-auto relative">
+        <h1 className="text-4xl font-bold font-rubik text-secondary text-center block">
           Some things I've built
-          </h1>
-        <div className="w-full box-border grid grid-cols-2 gap-4 p-4">
+        </h1>
+        <div className="w-full box-border flex flex-col gap-4 p-4">
 
-          <div className='h-96 w-auto box-border flex flex-col'>
-            <div className='grow bg-white shadow-md rounded-xl relative overflow-hidden'>
+          <div className='h-72 w-auto box-border border-[1px] border-moon shadow-sm rounded-xl overflow-hidden flex gap-4 p-4'>
+            <div className='basis-3/5 w-full h-full rounded-xl relative overflow-hidden'>
               <Image src="/nicolas.jpg" alt="proj" layout='fill' />
             </div>
-            <div className='basis-auto bg-white p-2 '>description sdfasdfasdfasd sdafasdf asdfsa a a sddf aaf a da sdf asdfsd asfsa dfsdaf sadfasdg asdf</div>
-            <div className='shrink bg-white'>
-              <ClassicButton small>Visit</ClassicButton>
+            <div className='pt-2 basis-3/5 flex flex-col'>
+              <h1 className='font-sora text-lg font-bold'>Kaarmy : </h1>
+              <p className='grow font-sora text-md text-justify'>A social networking site for Companies, Professionals, Students, Freelancers and Entrepreneurs</p>
+              <p className='grow font-sora text-md text-justify'>Tech used : React js, Material ui, Styled components, Swr, Django, Django rest framework, Postgres, Redis, Aws</p>
+              <div className='shrink pt-2'>
+                <ClassicButton small>Visit</ClassicButton>
+              </div>
             </div>
           </div>
-          <div className='h-96 w-auto box-border flex flex-col'>
-            <div className='grow bg-white shadow-md rounded-xl relative overflow-hidden'>
+          <div className='h-72 w-auto box-border border-[1px] border-moon shadow-sm rounded-xl overflow-hidden flex gap-4 p-4'>
+            <div className='basis-3/5 w-full h-full rounded-xl relative overflow-hidden'>
               <Image src="/nicolas.jpg" alt="proj" layout='fill' />
             </div>
-            <div className='basis-auto bg-white p-2 '>description sdfasdfasdfasd sdafasdf asdfsa a a sddf aaf a da sdf asdfsd asfsa dfsdaf sadfasdg asdf</div>
-            <div className='shrink bg-white'>
-              <ClassicButton small>Visit</ClassicButton>
+            <div className='pt-2 basis-3/5 flex flex-col'>
+              <h1 className='font-sora text-lg font-bold'>Kaarmy : </h1>
+              <p className='grow font-sora text-md text-justify'>A social networking site for Companies, Professionals, Students, Freelancers and Entrepreneurs</p>
+              <p className='grow font-sora text-md text-justify'>Tech used : React js, Material ui, Styled components, Swr, Django, Django rest framework, Postgres, Redis, Aws</p>
+              <div className='shrink pt-2'>
+                <ClassicButton small>Visit</ClassicButton>
+              </div>
             </div>
           </div>
-          <div className='h-96 w-auto box-border flex flex-col'>
-            <div className='grow bg-white shadow-md rounded-xl relative overflow-hidden'>
+          <div className='h-72 w-auto box-border border-[1px] border-moon shadow-sm rounded-xl overflow-hidden flex gap-4 p-4'>
+            <div className='basis-3/5 w-full h-full rounded-xl relative overflow-hidden'>
               <Image src="/nicolas.jpg" alt="proj" layout='fill' />
             </div>
-            <div className='basis-auto bg-white p-2 '>description sdfasdfasdfasd sdafasdf asdfsa a a sddf aaf a da sdf asdfsd asfsa dfsdaf sadfasdg asdf</div>
-            <div className='shrink bg-white'>
-              <ClassicButton small>Visit</ClassicButton>
+            <div className='pt-2 basis-3/5 flex flex-col'>
+              <h1 className='font-sora text-lg font-bold'>Kaarmy : </h1>
+              <p className='grow font-sora text-md text-justify'>A social networking site for Companies, Professionals, Students, Freelancers and Entrepreneurs</p>
+              <p className='grow font-sora text-md text-justify'>Tech used : React js, Material ui, Styled components, Swr, Django, Django rest framework, Postgres, Redis, Aws</p>
+              <div className='shrink pt-2'>
+                <ClassicButton small>Visit</ClassicButton>
+              </div>
             </div>
           </div>
 

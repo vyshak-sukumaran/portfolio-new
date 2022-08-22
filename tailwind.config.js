@@ -9,7 +9,7 @@ module.exports = {
       primary: '#00ADE7',
       secondary: '#151B72',
       white: '#ffffff',
-      moon: '#f4fafc',
+      moon: '#e5f2f7',
       transparent: 'transparent'
     },
     fontFamily: {

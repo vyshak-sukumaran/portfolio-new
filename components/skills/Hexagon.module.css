@@ -10,6 +10,7 @@
 .wrapper {
     font-size: 0;
     /*disable white space between inline block element */
+    /*background-color: var(--primary);  TODO : change this to shadowed bg */
 }
 
 .hex {
@@ -41,7 +42,6 @@
 }
 
 .wrapper::before {
-    background-color: var(--primary); /* TODO: remove this line */
     content: "";
     width: calc(var(--s)/2 + var(--m));
     float: left;

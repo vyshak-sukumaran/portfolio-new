@@ -67,7 +67,7 @@ export default function Home() {
         <Contact />
       </main>
 
-      <footer className="w-full h-32 bg-secondary flex justify-center">
+      <footer className="w-full h-24 bg-secondary flex justify-center">
         <ul className='list-none w-80 flex items-center text-white justify-between'>
           <li>
             <GitIcon className="w-6 h-6" />
