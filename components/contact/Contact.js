@@ -33,17 +33,17 @@ const Contact = () => {
         <div className="grow w-full xl:max-w-md">
           <form className='flex flex-col gap-2' onSubmit={handleSubmit}>
             <input
-              className='w-full p-4 border-[3px] border-secondary rounded-md active:outline-none focus-within:outline-none focus-within:shadow-blue transition-all ease-in-out duration-200'
+              className='w-full p-4 border-[3px] bg-white border-secondary rounded-md active:outline-none focus-within:outline-none focus-within:shadow-blue transition-all ease-in-out duration-200'
               type="text"
               placeholder='Name'
             />
             <input
-              className='w-full p-4 border-[3px] border-secondary rounded-md active:outline-none focus-within:outline-none focus-within:shadow-blue transition-all ease-in-out duration-200'
+              className='w-full p-4 border-[3px] bg-white border-secondary rounded-md active:outline-none focus-within:outline-none focus-within:shadow-blue transition-all ease-in-out duration-200'
               type="text"
               placeholder='Email'
             />
             <textarea
-              className='w-full p-4 border-[3px] border-secondary rounded-md focus-within:outline-none resize-none focus-within:shadow-blue transition-all ease-in-out duration-200'
+              className='w-full p-4 border-[3px] bg-white border-secondary rounded-md focus-within:outline-none resize-none focus-within:shadow-blue transition-all ease-in-out duration-200'
               placeholder='Type something...'
               rows={6}
             />
