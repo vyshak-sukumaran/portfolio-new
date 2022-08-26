@@ -23,7 +23,7 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="bg-white w-full h-auto">
+    <div className="bg-moon w-full h-auto">
 
       <BlockContainer>
 
@@ -43,21 +43,23 @@ export default function Home() {
 
         <Contact />
 
-      </BlockContainer>
+      
 
-      <footer className="w-full h-24 bg-secondary flex justify-center">
-        <ul className='list-none w-80 flex items-center text-white justify-between'>
+      <footer className="w-full h-16 bg-secondary flex justify-center">
+        <ul className='list-none w-11/12 flex items-center text-white justify-center gap-12'>
           <li>
-            <GitIcon className="w-6 h-6" />
+            <GitIcon className="w-5 h-5" />
           </li>
           <li>
-            <TwitterIcon className="w-6 h-6" />
+            <TwitterIcon className="w-5 h-5" />
           </li>
           <li>
-            <InIcon className="w-6 h-6" />
+            <InIcon className="w-5 h-5" />
           </li>
         </ul>
       </footer>
+      
+      </BlockContainer>
     </div>
 
   )

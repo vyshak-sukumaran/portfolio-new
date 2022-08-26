@@ -8,8 +8,8 @@ const Projects = () => {
   const intersecting = useIntersectionObserver(ref, {})
   return (
     <div id='projects' className='w-full min-h-[700px] relative pt-32 pb-5'>
-      <div className="w-2/3 min-h-[24rem] mx-auto relative">
-        <h1 ref={ref} className="text-4xl font-bold font-rubik text-secondary text-center block py-3">
+      <div className="w-11/12 max-w-sm min-h-[24rem] mx-auto relative sm:max-w-md lg:max-w-2xl xl:max-w-3xl">
+        <h1 ref={ref} className="text-2xl font-bold font-rubik text-secondary text-center block py-3 lg:text-3xl xl:text-4xl">
           <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "022ms" }}>S</span>
           <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "122ms" }}>o</span>
           <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "222ms" }}>m</span>
@@ -33,16 +33,16 @@ const Projects = () => {
           <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "2022ms" }}>l</span>
           <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "2122ms" }}>t</span>
         </h1>
-        <div className="w-full box-border flex flex-col gap-3 p-4">
+        <div className="w-full box-border flex flex-col gap-3 py-4">
 
-          <div className={`h-72 w-auto box-border border-[1px] border-grey shadow-sm rounded-xl overflow-hidden flex gap-4 p-4 opacity-0 ${intersecting && 'animate-rise-up'}`} style={{animationDelay: "22ms"}}>
-            <div className='basis-3/5 w-full h-full rounded-xl relative overflow-hidden'>
+          <div className={`w-auto box-border border-[1px] border-grey shadow-sm rounded-xl overflow-hidden flex flex-col gap-2 p-1 opacity-0 ${intersecting && 'animate-rise-up'} sm:p-2 lg:flex-row lg:gap-3`} style={{animationDelay: "22ms"}}>
+            <div className='w-full h-32 rounded-xl relative overflow-hidden lg:w-72 lg:h-auto xl:w-80 xl:h-48'>
               <Image src="/nicolas.jpg" alt="proj" layout='fill' />
             </div>
-            <div className='pt-2 basis-3/5 flex flex-col'>
+            <div className='basis-3/5 flex flex-col'>
               <h1 className='font-sora text-xl font-bold text-secondary'>Kaarmy</h1>
-              <p className='grow font-sora text-md text-justify pt-3'>A social networking site for Companies, Professionals, Students, Freelancers and Entrepreneurs</p>
-              <p className='grow font-sora text-md text-justify'>
+              <p className='grow font-sora text-sm text-justify pt-2'>A social networking site for Companies, Professionals, Students, Freelancers and Entrepreneurs</p>
+              <p className='grow font-sora text-sm text-justify pt-1'>
                 <span className='font-bold'>Tech and tools : </span>React js, Material ui, Styled components, Swr, Django, Django rest framework, Postgres, Redis, Aws</p>
               <div className='shrink pt-2'>
                 <ClassicButton small>Visit</ClassicButton>
@@ -50,35 +50,20 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className={`h-72 w-auto box-border border-[1px] border-grey shadow-sm rounded-xl overflow-hidden flex gap-4 p-4 opacity-0 ${intersecting && 'animate-rise-up'}`} style={{animationDelay: "44ms"}}>
-            <div className='basis-3/5 w-full h-full rounded-xl relative overflow-hidden'>
+          <div className={`w-auto box-border border-[1px] border-grey shadow-sm rounded-xl overflow-hidden flex flex-col gap-2 p-1 opacity-0 ${intersecting && 'animate-rise-up'} sm:p-2 lg:flex-row lg:gap-3`} style={{animationDelay: "22ms"}}>
+            <div className='w-full h-32 rounded-xl relative overflow-hidden lg:w-72 lg:h-auto xl:w-80 xl:h-48'>
               <Image src="/nicolas.jpg" alt="proj" layout='fill' />
             </div>
-            <div className='pt-2 basis-3/5 flex flex-col'>
+            <div className='basis-3/5 flex flex-col'>
               <h1 className='font-sora text-xl font-bold text-secondary'>Kaarmy</h1>
-              <p className='grow font-sora text-md text-justify pt-3'>A social networking site for Companies, Professionals, Students, Freelancers and Entrepreneurs</p>
-              <p className='grow font-sora text-md text-justify'>
+              <p className='grow font-sora text-sm text-justify pt-2'>A social networking site for Companies, Professionals, Students, Freelancers and Entrepreneurs</p>
+              <p className='grow font-sora text-sm text-justify pt-1'>
                 <span className='font-bold'>Tech and tools : </span>React js, Material ui, Styled components, Swr, Django, Django rest framework, Postgres, Redis, Aws</p>
               <div className='shrink pt-2'>
                 <ClassicButton small>Visit</ClassicButton>
               </div>
             </div>
-          </div>
-
-          <div className={`h-72 w-auto box-border border-[1px] border-grey shadow-sm rounded-xl overflow-hidden flex gap-4 p-4 opacity-0 ${intersecting && 'animate-rise-up'}`} style={{animationDelay: "66ms"}}>
-            <div className='basis-3/5 w-full h-full rounded-xl relative overflow-hidden'>
-              <Image src="/nicolas.jpg" alt="proj" layout='fill' />
-            </div>
-            <div className='pt-2 basis-3/5 flex flex-col'>
-              <h1 className='font-sora text-xl font-bold text-secondary'>Kaarmy</h1>
-              <p className='grow font-sora text-md text-justify pt-3'>A social networking site for Companies, Professionals, Students, Freelancers and Entrepreneurs</p>
-              <p className='grow font-sora text-md text-justify'>
-                <span className='font-bold'>Tech and tools : </span>React js, Material ui, Styled components, Swr, Django, Django rest framework, Postgres, Redis, Aws</p>
-              <div className='shrink pt-2'>
-                <ClassicButton small>Visit</ClassicButton>
-              </div>
-            </div>
-          </div>
+          </div>      
 
         </div>
       </div>

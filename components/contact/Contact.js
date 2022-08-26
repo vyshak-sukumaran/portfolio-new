@@ -11,25 +11,26 @@ const Contact = () => {
   }
   return (
     <div id="contact" className='w-full h-screen min-h-[600px] relative'>
-      <div className="absolute w-2/3 h-[28rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex">
-        <div className="grow basis-1/2 pl-5">
-          <h1 className='text-8xl font-rubik font-bold mb-4 text-secondary'>
+      <div className="absolute w-11/12 max-w-sm h-[28rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-2 justify-center items-center
+      sm:max-w-md lg:max-w-2xl lg:flex-row xl:max-w-4xl">
+        <div className="text-2xl font-rubik font-bold mb-4 text-secondary flex gap-1 lg:flex-col lg:text-7xl lg:basis-1/3 lg:shrink-0 lg:gap-4 xl:text-8xl">
+          <h1>
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "022ms" }}>S</span>
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "122ms" }}>a</span>
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "222ms" }}>y</span>
           </h1>
-          <h1 className='text-8xl font-rubik font-bold mb-4 text-secondary'>
+          <h1>
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "322ms" }}>H</span>
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "422ms" }}>e</span>
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "522ms" }}>l</span>
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "622ms" }}>l</span>
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "722ms" }}>o</span>
           </h1>
-          <h1 ref={ref} className='text-8xl font-rubik font-bold'>
+          <h1 ref={ref}>
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "822ms" }}>👋</span>
           </h1>
         </div>
-        <div className="basis-1/2">
+        <div className="grow w-full">
           <form className='flex flex-col gap-2' onSubmit={handleSubmit}>
             <input
               className='w-full p-4 border-[3px] border-secondary rounded-md active:outline-none focus-within:outline-none focus-within:shadow-blue transition-all ease-in-out duration-200'

@@ -1,6 +1,6 @@
 .main {
     display: flex;
-    --s: 150px;
+    --s: 100px;
     /* size  */
     --m: 2px;
     /* margin */
@@ -35,7 +35,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Sora', sans-serif;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: var(--secondary);
     text-align: center;
@@ -49,4 +49,18 @@
     height: 120%;
     shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px),
             #000 0 var(--f));
+}
+
+@media (min-width: 1024px) {
+    .main {
+        --s: 120px
+    }
+}
+@media (min-width: 1280px) {
+    .main {
+        --s: 140px
+    }
+    .hex span {
+        font-size: 1rem;
+    }
 }
