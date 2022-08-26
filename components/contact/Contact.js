@@ -30,7 +30,7 @@ const Contact = () => {
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "822ms" }}>👋</span>
           </h1>
         </div>
-        <div className="grow w-full">
+        <div className="grow w-full xl:max-w-md">
           <form className='flex flex-col gap-2' onSubmit={handleSubmit}>
             <input
               className='w-full p-4 border-[3px] border-secondary rounded-md active:outline-none focus-within:outline-none focus-within:shadow-blue transition-all ease-in-out duration-200'
