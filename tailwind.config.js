@@ -11,6 +11,7 @@ module.exports = {
       white: '#ffffff',
       moon: '#defcf9',
       grey: '#d9dcdd',
+      black: '#000000',
       transparent: 'transparent'
     },
     fontFamily: {

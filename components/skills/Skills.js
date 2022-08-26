@@ -31,7 +31,7 @@ const Skills = () => {
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "1122ms" }}>?</span>
           </h1>
         </div>
-        <div className='basis-2/3 flex justify-center items-center'>
+        <div className='basis-2/3 flex justify-center items-center pl-2 sm:pl-0'>
           <Hexagon />
         </div>
       </div>

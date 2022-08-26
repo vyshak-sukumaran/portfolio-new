@@ -34,7 +34,7 @@ const About = () => {
                     </h1>
                     {/* <TitleOne title="Who am I ?" /> */}
 
-                    <p className='font-medium text-justify text-sm font-sora lg:text-base'>
+                    <p className='font-medium text-justify text-sm font-sora text-black lg:text-base'>
                         I&apos;m a software engineer intrerested in building stuffs on the web.
                         <br /><br />
                         Although my current focus is on building engaging and interactive user interfaces, I have a strong background in backend development also.

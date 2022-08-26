@@ -41,8 +41,8 @@ const Projects = () => {
             </div>
             <div className='basis-3/5 flex flex-col'>
               <h1 className='font-sora text-xl font-bold text-secondary'>Kaarmy</h1>
-              <p className='grow font-sora text-sm text-justify pt-2'>A social networking site for Companies, Professionals, Students, Freelancers and Entrepreneurs</p>
-              <p className='grow font-sora text-sm text-justify pt-1'>
+              <p className='grow font-sora text-sm text-justify pt-2 text-black'>A social networking site for Companies, Professionals, Students, Freelancers and Entrepreneurs</p>
+              <p className='grow font-sora text-sm text-justify pt-1 text-black'>
                 <span className='font-bold'>Tech and tools : </span>React js, Material ui, Styled components, Swr, Django, Django rest framework, Postgres, Redis, Aws</p>
               <div className='shrink pt-2'>
                 <ClassicButton small>Visit</ClassicButton>
@@ -56,8 +56,8 @@ const Projects = () => {
             </div>
             <div className='basis-3/5 flex flex-col'>
               <h1 className='font-sora text-xl font-bold text-secondary'>Kaarmy</h1>
-              <p className='grow font-sora text-sm text-justify pt-2'>A social networking site for Companies, Professionals, Students, Freelancers and Entrepreneurs</p>
-              <p className='grow font-sora text-sm text-justify pt-1'>
+              <p className='grow font-sora text-sm text-justify pt-2 text-black'>A social networking site for Companies, Professionals, Students, Freelancers and Entrepreneurs</p>
+              <p className='grow font-sora text-sm text-justify pt-1 text-black'>
                 <span className='font-bold'>Tech and tools : </span>React js, Material ui, Styled components, Swr, Django, Django rest framework, Postgres, Redis, Aws</p>
               <div className='shrink pt-2'>
                 <ClassicButton small>Visit</ClassicButton>
