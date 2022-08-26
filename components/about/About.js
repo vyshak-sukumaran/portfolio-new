@@ -35,11 +35,11 @@ const About = () => {
                     {/* <TitleOne title="Who am I ?" /> */}
 
                     <p className='font-medium text-justify text-sm font-sora lg:text-base'>
-                        I'm a software engineer intrerested in building stuffs on the web.
+                        I&apos;m a software engineer intrerested in building stuffs on the web.
                         <br /><br />
                         Although my current focus is on building engaging and interactive user interfaces, I have a strong background in backend development also.
                         <br /><br />
-                        I'm curious about tech and have a hunger for learning them.
+                        I&apos;m curious about tech and have a hunger for learning them.
                     </p>
                     {/* <p>Building things on web were always interesting for me thats why I chose to become a web developer after college. Lately, I figured out that my designing skills are not that bad, so you can say that, I am one of those guys who can do both coding and designing.</p> */}
                 </div>
