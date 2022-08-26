@@ -15,7 +15,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='sticky top-0 left-0 w-fit h-20 z-10'>
+        <nav className='sticky top-0 left-0 w-fit h-0 z-10'>
             <div className='flex gap-2 pt-2 pl-2 items-center justify-start relative -translate-x-20 animate-slide-in z-10' style={{ animationDelay: "2022ms" }}>
                 <HamburgerButton
                     isOpen={isOpen}
