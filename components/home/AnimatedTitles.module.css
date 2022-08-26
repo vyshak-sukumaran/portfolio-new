@@ -6,6 +6,7 @@
 .title {
     font-family: "Luckiest Guy", cursive;
     font-size: 6rem;
+    line-height: 8rem;
     letter-spacing: 3px;
     text-align: center;
     color: var(--primary);
@@ -16,14 +17,27 @@
     -7px 7px var(--secondary), -8px 8px var(--secondary), -9px 9px var(--secondary),
     -10px 10px var(--secondary), -11px 11px var(--secondary), -12px 12px var(--secondary),
     -13px 13px var(--secondary);
+    overflow: hidden;
+    padding: 0 20px 10px 20px;
 }
-.title span {
-    display: block;
+.top {
+    opacity: 0;
+    letter-spacing: 50px;
+    /* animation: falldown 1000ms ease-in-out 0ms 1 forwards; */
+    animation-name: tanim;
+    animation-duration: 1000ms;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 2022ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
-
-.description {
-    font-size: 3rem;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 600;
-    color: var(--secondary);
+@keyframes tanim {
+    0% {
+        opacity: 0;
+        letter-spacing: 50px;
+    }
+    100% {
+        opacity: 1;
+        letter-spacing: 3px;
+    }
 }

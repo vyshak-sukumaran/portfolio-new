@@ -11,8 +11,12 @@ const Landing = () => {
 
       <div className='w-fit h-96 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-2'>
         <AnimatedTitles />
+
+        <h2 className="font-rubik text-5xl text-center font-semibold text-secondary overflow-hidden flex items-center justify-center">
+          <span className='translate-y-[200px] rotate-[15deg] origin-top-right animate-slide-up' style={{animationDelay: '2122ms'}}>Web&nbsp;</span>
+          <span className='translate-y-[200px] rotate-[15deg] origin-top-right animate-slide-up' style={{animationDelay: '2144ms'}}>Developer</span>
+          </h2>
       </div>
-      {/* box-shadow: 2px -4px 4px 0px rgba(21, 27, 114, 1) inset; */}
 
       <div className="absolute w-fit h-fit bottom-0 right-0 grid grid-rows-2 grid-cols-2 opacity-50">
         <div className='box-border p-2'>

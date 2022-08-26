@@ -1,27 +1,9 @@
 import '../styles/globals.css'
 import React from 'react'
-import Spinner from '../components/loading/Spinner'
 
 function MyApp({ Component, pageProps }) {
-  const [loading, setLoading] = React.useState(true)
 
-  React.useEffect(() => {
-    setTimeout(() => {
-      setLoading(false)
-    }, 1500)
-  }, [])
-  return (
-    <>
-      {
-        loading ?
-          <Spinner />
-          :
-          <React.Fragment>
-            <Component {...pageProps} />
-          </React.Fragment>
-      }
-    </>
-  )
+  return <Component {...pageProps} />
 }
 
 export default MyApp
