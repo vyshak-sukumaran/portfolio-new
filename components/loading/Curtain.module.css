@@ -4,6 +4,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 20;
 }
 
 .flex {
@@ -51,10 +52,6 @@
 @media (max-width: 800px) {
     .flex {
         flex-wrap: wrap;
-    }
-
-    .animate {
-        margin-right: 4px;
     }
     
 }

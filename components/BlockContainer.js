@@ -44,7 +44,7 @@ const BlockContainer = ({ children, ...customMeta }) => {
 
 
             </Head>
-            <main className='max-w-[1366px] bg-white mx-auto relative'>
+            <main className='max-w-[1366px] bg-white mx-auto relative h-screen overflow-y-scroll overflow-x-hidden scroll-smooth'>
                 {children}
             </main>
         </>
