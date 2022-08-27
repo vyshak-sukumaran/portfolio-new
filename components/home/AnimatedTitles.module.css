@@ -11,8 +11,7 @@
     letter-spacing: 3px;
     text-align: center;
     color: var(--primary);
-    text-shadow: 3px -3px var(--secondary),
-        2px -2px var(--secondary), 1px -1px var(--secondary),
+    text-shadow: 1px -1px var(--secondary),
         -1px 1px var(--secondary), -2px 2px var(--secondary), -3px 3px var(--secondary),
         -4px 4px var(--secondary), -5px 5px var(--secondary), -6px 6px var(--secondary),
         -7px 7px var(--secondary);
@@ -48,8 +47,7 @@
     .title {
         font-size: 4.5rem;
         line-height: 6rem;
-        text-shadow: 3px -3px var(--secondary),
-            2px -2px var(--secondary), 1px -1px var(--secondary),
+        text-shadow: 2px -2px var(--secondary), 1px -1px var(--secondary),
             -1px 1px var(--secondary), -2px 2px var(--secondary), -3px 3px var(--secondary),
             -4px 4px var(--secondary), -5px 5px var(--secondary), -6px 6px var(--secondary),
             -7px 7px var(--secondary), -8px 8px var(--secondary), -9px 9px var(--secondary),
