@@ -68,22 +68,3 @@
             -13px 13px var(--secondary);
     }
 }
-
-/* 
-.title {
-    font-family: "Luckiest Guy", cursive;
-    font-size: 6rem;
-    line-height: 8rem;
-    letter-spacing: 3px;
-    text-align: center;
-    color: var(--primary);
-    text-shadow: 3px -3px var(--secondary),
-    2px -2px var(--secondary), 1px -1px var(--secondary),
-    -1px 1px var(--secondary), -2px 2px var(--secondary), -3px 3px var(--secondary),
-    -4px 4px var(--secondary), -5px 5px var(--secondary), -6px 6px var(--secondary),
-    -7px 7px var(--secondary), -8px 8px var(--secondary), -9px 9px var(--secondary),
-    -10px 10px var(--secondary), -11px 11px var(--secondary), -12px 12px var(--secondary),
-    -13px 13px var(--secondary);
-    overflow: hidden;
-    padding: 0 20px 10px 20px;
-} */

@@ -32,7 +32,7 @@ module.exports = {
         'wobble': 'wob 750ms cubic-bezier(.6,.09,.43,1) 1 forwards',
         'spin-slow': 'spin 3s linear infinite',
         'slide-up': 'slideup 1000ms cubic-bezier(0.65, 0, 0.35, 1) 1 forwards',
-        'rise-up': 'riseup 1000ms cubic-bezier(0.65, 0, 0.35, 1) 1 forwards'
+        'rise-up': 'riseup 1000ms cubic-bezier(0.21, 0.44, 0.4, 0.96) 1 forwards'
       },
       keyframes: {
         riseup: {

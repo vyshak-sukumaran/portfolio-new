@@ -14,7 +14,7 @@ const useIntersectionObserver = (ref, options) => {
     }
 
     return () => {
-      observer.unobserve(ref.current)
+      observer.disconnect()
     }
   }, [])
   return intersecting

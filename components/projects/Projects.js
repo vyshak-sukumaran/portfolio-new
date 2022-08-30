@@ -35,7 +35,7 @@ const Projects = () => {
         </h1>
         <div className="w-full box-border flex flex-col gap-3 py-4">
 
-          <div className={`w-auto box-border border-[1px] border-grey shadow-sm rounded-xl overflow-hidden flex flex-col gap-2 p-1 opacity-0 ${intersecting && 'animate-rise-up'} sm:p-2 lg:flex-row lg:gap-3`} style={{animationDelay: "22ms"}}>
+          <div className={`w-auto box-border border-[1px] border-grey shadow-sm rounded-xl overflow-hidden flex flex-col gap-2 p-1 opacity-0 ${intersecting && 'animate-rise-up'} sm:p-2 lg:flex-row lg:gap-3`} style={{animationDelay: "422ms"}}>
             <div className='w-full h-32 rounded-xl relative overflow-hidden lg:w-72 lg:h-auto xl:w-80 xl:h-48'>
               <Image src="/nicolas.jpg" alt="proj" layout='fill' />
             </div>
@@ -50,7 +50,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className={`w-auto box-border border-[1px] border-grey shadow-sm rounded-xl overflow-hidden flex flex-col gap-2 p-1 opacity-0 ${intersecting && 'animate-rise-up'} sm:p-2 lg:flex-row lg:gap-3`} style={{animationDelay: "22ms"}}>
+          <div className={`w-auto box-border border-[1px] border-grey shadow-sm rounded-xl overflow-hidden flex flex-col gap-2 p-1 opacity-0 ${intersecting && 'animate-rise-up'} sm:p-2 lg:flex-row lg:gap-3`} style={{animationDelay: "488ms"}}>
             <div className='w-full h-32 rounded-xl relative overflow-hidden lg:w-72 lg:h-auto xl:w-80 xl:h-48'>
               <Image src="/nicolas.jpg" alt="proj" layout='fill' />
             </div>
