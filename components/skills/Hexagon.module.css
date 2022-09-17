@@ -1,6 +1,6 @@
 .main {
     display: flex;
-    --s: 100px;
+    --s: 90px;
     /* size  */
     --m: 2px;
     /* margin */
@@ -35,11 +35,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Sora', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     font-weight: 500;
     color: var(--secondary);
     text-align: center;
-    
 }
 
 .wrapper::before {
@@ -50,17 +49,24 @@
     shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px),
             #000 0 var(--f));
 }
-
+@media (min-width: 640px) {
+    .main {
+        --s: 110px
+    }
+}
 @media (min-width: 1024px) {
     .main {
         --s: 120px
     }
+    .hex span {
+        font-size: 0.9rem;
+    }
 }
 @media (min-width: 1280px) {
     .main {
-        --s: 140px
+        --s: 125px
     }
     .hex span {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }

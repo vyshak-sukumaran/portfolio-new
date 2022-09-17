@@ -35,10 +35,6 @@ const Hexagon = () => {
         </div>
         <div className={styles.hex}>
           <HexIcon />
-          <span>Python</span>
-        </div>
-        <div className={styles.hex}>
-          <HexIcon />
           <span>Javascript</span>
         </div>
         <div className={styles.hex}>
@@ -51,6 +47,10 @@ const Hexagon = () => {
         </div>
         <div className={styles.hex}>
           <HexIcon />
+          <span>Python</span>
+        </div>
+        <div className={styles.hex}>
+          <HexIcon />
           <span>Django</span>
         </div>
         <div className={styles.hex}>
@@ -60,6 +60,10 @@ const Hexagon = () => {
         <div className={styles.hex}>
           <HexIcon />
           <span>Docker</span>
+        </div>
+        <div className={styles.hex}>
+          <HexIcon />
+          <span>Postgres</span>
         </div>
         
       </div>

@@ -11,7 +11,7 @@ const About = () => {
             <div className="absolute w-11/12 max-w-sm min-h-[26rem] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-5 rounded-xl bg-white border-[1px] border-grey shadow-sm flex flex-col
             sm:max-w-md lg:flex-row lg:max-w-2xl xl:max-w-3xl">
                 <div className="basis-2/5 p-2 flex justify-center items-center">
-                    <div className="w-24 h-24 rounded-full overflow-hidden border-[3px] shadow-blue border-secondary relative lg:w-36 lg:h-36 xl:w-44 xl:h-44">
+                    <div className="w-32 h-32 rounded-full overflow-hidden border-[3px] shadow-blue border-secondary relative pointer-events-none lg:w-36 lg:h-36 xl:w-44 xl:h-44">
                         <Image src="https://ucarecdn.com/d95ea986-cc01-42d7-8dc3-9fea52558cdf/vyshak1.png" alt='me' layout='fill' />
                     </div>
                 </div>

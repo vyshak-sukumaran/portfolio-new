@@ -35,9 +35,9 @@ const Projects = () => {
         </h1>
         <div className="w-full box-border flex flex-col gap-3 py-4">
 
-          <div className={`w-auto box-border border-[1px] border-grey shadow-sm rounded-xl overflow-hidden flex flex-col gap-2 p-1 opacity-0 ${intersecting && 'animate-rise-up'} sm:p-2 lg:flex-row lg:gap-3`} style={{animationDelay: "422ms"}}>
-            <div className='w-full h-32 rounded-xl relative overflow-hidden lg:w-72 lg:h-auto xl:w-80 xl:h-48'>
-              <Image src="/nicolas.jpg" alt="proj" layout='fill' />
+          <div className={`w-auto box-border border-[1px] border-grey shadow-sm rounded-xl overflow-hidden flex flex-col gap-2 p-1 opacity-0 ${intersecting && 'animate-rise-up'} sm:p-2 lg:flex-row lg:gap-3`} style={{ animationDelay: "422ms" }}>
+            <div className='w-full h-48 rounded-xl relative pointer-events-none overflow-hidden lg:w-[23rem] lg:h-44 xl:w-[24rem] xl:h-48'>
+              <Image src="https://ucarecdn.com/cd6afc5f-21f0-4f54-96be-6c0a4aa57083/kkkarmy.png" alt="proj" layout='fill' objectFit='cover' />
             </div>
             <div className='basis-3/5 flex flex-col'>
               <h1 className='font-sora text-xl font-bold text-secondary'>Kaarmy</h1>
@@ -45,25 +45,29 @@ const Projects = () => {
               <p className='grow font-sora text-sm text-justify pt-1 text-black'>
                 <span className='font-bold'>Tech and tools : </span>React js, Material ui, Styled components, Swr, Django, Django rest framework, Postgres, Redis, Aws</p>
               <div className='shrink pt-2'>
-                <ClassicButton small>Visit</ClassicButton>
+                <a href="https://www.kaarmy.com" target="_blank">
+                  <ClassicButton small>Visit</ClassicButton>
+                </a>
               </div>
             </div>
           </div>
 
-          <div className={`w-auto box-border border-[1px] border-grey shadow-sm rounded-xl overflow-hidden flex flex-col gap-2 p-1 opacity-0 ${intersecting && 'animate-rise-up'} sm:p-2 lg:flex-row lg:gap-3`} style={{animationDelay: "488ms"}}>
-            <div className='w-full h-32 rounded-xl relative overflow-hidden lg:w-72 lg:h-auto xl:w-80 xl:h-48'>
-              <Image src="/nicolas.jpg" alt="proj" layout='fill' />
+          <div className={`w-auto box-border border-[1px] border-grey shadow-sm rounded-xl overflow-hidden flex flex-col gap-2 p-1 opacity-0 ${intersecting && 'animate-rise-up'} sm:p-2 lg:flex-row lg:gap-3`} style={{ animationDelay: "422ms" }}>
+            <div className='w-full h-48 rounded-xl relative pointer-events-none overflow-hidden lg:w-[23rem] lg:h-44 xl:w-[24rem] xl:h-48'>
+              <Image src="https://ucarecdn.com/3c33ab8e-4369-4662-a3a8-53b8dd7fc85b/os20.png" alt="proj" layout='fill' objectFit='cover' />
             </div>
             <div className='basis-3/5 flex flex-col'>
-              <h1 className='font-sora text-xl font-bold text-secondary'>Kaarmy</h1>
-              <p className='grow font-sora text-sm text-justify pt-2 text-black'>A social networking site for Companies, Professionals, Students, Freelancers and Entrepreneurs</p>
+              <h1 className='font-sora text-xl font-bold text-secondary'>Os 20</h1>
+              <p className='grow font-sora text-sm text-justify pt-2 text-black'>A static Operating System UI prototype inspired from some of the linux distros I&apos;ve used.</p>
               <p className='grow font-sora text-sm text-justify pt-1 text-black'>
-                <span className='font-bold'>Tech and tools : </span>React js, Material ui, Styled components, Swr, Django, Django rest framework, Postgres, Redis, Aws</p>
+                <span className='font-bold'>Tech and tools : </span>React js, Styled components, Figma, Netlify</p>
               <div className='shrink pt-2'>
-                <ClassicButton small>Visit</ClassicButton>
+                <a href="https://os20.netlify.app/" target="_blank">
+                  <ClassicButton small>Visit</ClassicButton>
+                </a>
               </div>
             </div>
-          </div>      
+          </div>
 
         </div>
       </div>
