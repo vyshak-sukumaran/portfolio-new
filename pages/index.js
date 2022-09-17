@@ -24,7 +24,7 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="bg-moon w-full h-auto">
+    <div className="bg-white w-full h-screen overflow-y-scroll overflow-x-hidden scroll-smooth">
 
       <BlockContainer>
 
