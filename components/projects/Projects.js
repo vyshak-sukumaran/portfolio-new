@@ -45,7 +45,7 @@ const Projects = () => {
               <p className='grow font-sora text-sm text-justify pt-1 text-black'>
                 <span className='font-bold'>Tech and tools : </span>React js, Material ui, Styled components, Swr, Django, Django rest framework, Postgres, Redis, Aws</p>
               <div className='shrink pt-2'>
-                <a href="https://www.kaarmy.com" target="_blank">
+                <a href="https://www.kaarmy.com" target="_blank" rel="noopener noreferrer">
                   <ClassicButton small>Visit</ClassicButton>
                 </a>
               </div>
@@ -62,7 +62,7 @@ const Projects = () => {
               <p className='grow font-sora text-sm text-justify pt-1 text-black'>
                 <span className='font-bold'>Tech and tools : </span>React js, Styled components, Figma, Netlify</p>
               <div className='shrink pt-2'>
-                <a href="https://os20.netlify.app/" target="_blank">
+                <a href="https://os20.netlify.app/" target="_blank" rel="noopener noreferrer">
                   <ClassicButton small>Visit</ClassicButton>
                 </a>
               </div>

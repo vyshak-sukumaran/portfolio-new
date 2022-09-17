@@ -50,17 +50,17 @@ export default function Home() {
           <div className='text-primary font-rubik text-xl font-medium'>Let&apos;s stay in touch</div>
           <ul className='list-none w-11/12 flex items-center text-white justify-center gap-10'>
             <li className='p-2 bg-primary rounded-full'>
-              <a href="https://github.com/vyshak-sukumaran" target="_blank">
+              <a href="https://github.com/vyshak-sukumaran" target="_blank" rel="noopener noreferrer">
                 <GitIcon className="w-5 h-5" />
               </a>
             </li>
             <li className='p-2 bg-primary rounded-full'>
-              <a href="https://www.linkedin.com/in/vyshak-t-69b6671b8" target="_blank">
+              <a href="https://www.linkedin.com/in/vyshak-t-69b6671b8" target="_blank" rel="noopener noreferrer">
                 <InIcon className="w-5 h-5" />
               </a>
             </li>
             <li className='p-2 bg-primary rounded-full'>
-              <a href="https://mobile.twitter.com/VyshakS2000" target="_blank">
+              <a href="https://mobile.twitter.com/VyshakS2000" target="_blank" rel="noopener noreferrer">
                 <TwitterIcon className="w-5 h-5" />
               </a>
             </li>
