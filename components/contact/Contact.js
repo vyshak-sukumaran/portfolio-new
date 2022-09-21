@@ -18,6 +18,7 @@ const Contact = () => {
   })
   const [showToast, setShowToast] = useState(false)
   const [err, setErr] = useState(false)
+  const [disabled, setDisabled] = useState(false)
 
   const intersectionRef = useRef(null)
   const formRef = useRef(null)
@@ -30,6 +31,8 @@ const Contact = () => {
 
     if (showToast) return
 
+    if (!disabled) setDisabled(true)
+
     emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY).then(
       (res) => {
         setShowToast(true)
@@ -38,10 +41,12 @@ const Contact = () => {
           from_email: "",
           message: ""
         })
+        setDisabled(false)
       }, (err) => {
         console.log(err);
         setShowToast(true)
         setErr(true)
+        setDisabled(false)
       }
     )
 
@@ -80,13 +85,13 @@ const Contact = () => {
   return (
     <div id="contact" className='w-full h-screen min-h-[600px] relative'>
       {/* snack bar */}
-      <div ref={toastRef} className={`fixed top-3 right-5 z-50 w-[21rem] h-24 box-border bg-white rounded-lg border-[1px] border-grey shadow-md overflow-hidden flex justify-center transition-all duration-500 ease-[cubic-bezier(.68,-0.55,.26,1.35)] ${!showToast ? "translate-x-[calc(100%+1.25rem)]" : "translate-x-0"}`}>
+      <div ref={toastRef} className={`fixed top-3 right-5 z-50 w-[21rem] h-24 box-border bg-white rounded-lg border-[1px] border-grey shadow-md overflow-hidden flex justify-center transition-all duration-500 ease-in-out-wobble ${!showToast ? "translate-x-[calc(100%+1.25rem)]" : "translate-x-0"}`}>
         <div className='flex items-center justify-center gap-7'>
           {
             !err ?
-            <SentIcon className="w-10 h-10" />
-            :
-            <AlertIcon className="w-10 h-10" />
+              <SentIcon className="w-10 h-10" />
+              :
+              <AlertIcon className="w-10 h-10" />
           }
           <div className="flex flex-col font-sora text-black">
             <span className='text-base font-medium'>
@@ -172,7 +177,13 @@ const Contact = () => {
                 }))
               }}
             />
-            <ClassicButton small type="submit">Send</ClassicButton>
+            <ClassicButton
+              small
+              type="submit"
+              disabled={disabled}
+            >
+              Send
+            </ClassicButton>
           </form>
         </div>
 

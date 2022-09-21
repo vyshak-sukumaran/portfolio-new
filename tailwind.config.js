@@ -26,7 +26,9 @@ module.exports = {
       blur: {
         xs: '2px',
       },
-      
+      transitionTimingFunction:{
+        'in-out-wobble': 'cubic-bezier(.68,-0.55,0.26,1.35)'
+      },
       animation: {
         'slide-in': 'slide 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1 forwards',
         'wobble': 'wob 750ms cubic-bezier(.6,.09,.43,1) 1 forwards',

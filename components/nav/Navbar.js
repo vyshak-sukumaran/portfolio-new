@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import HomeIcon from '../../assets/home.svg'
 import AboutIcon from '../../assets/about.svg'
 import SkillsIcon from '../../assets/skills.svg'
@@ -14,6 +14,19 @@ const Navbar = () => {
         setIsOpen(!isOpen)
     }
 
+    useEffect(() => {
+        if(!isOpen) return
+
+        const elem = document.querySelector("#main")
+        const handleScroll = (e) => {
+            setIsOpen(false)
+        }
+        elem.addEventListener("scroll", handleScroll, false)
+        return () => {
+            elem.removeEventListener("scroll", handleScroll, false)
+        }
+    }, [isOpen])
+
     return (
         <nav className='sticky top-0 left-0 w-fit h-0 z-10'>
             <div className='flex gap-2 pt-2 pl-2 items-center justify-start relative -translate-x-20 animate-slide-in z-10' style={{ animationDelay: "2022ms" }}>
@@ -22,8 +35,8 @@ const Navbar = () => {
                     handleClick={handleToggle}
                 />
             </div>
-            <div className={`${!isOpen ? 'opacity-0 -translate-x-32 w-0' : 'opacity-100 translate-x-0  w-60'} h-screen bg-moon absolute top-0 left-0 transition-all duration-300`}></div>
-            <ul className={`${!isOpen ? 'opacity-0 -translate-x-32 w-0 md:opacity-100 md:translate-x-0 md:w-auto' : 'opacity-100 translate-x-0 w-auto'} p-2 flex flex-col gap-3 list-none transition-all duration-300`}>
+            <div className={`${!isOpen ? 'opacity-0 -translate-x-32 w-0' : 'opacity-100 -translate-x-3  w-64'} h-screen bg-moon absolute top-0 left-0 transition-all duration-500 ease-in-out-wobble`}></div>
+            <ul className={`${!isOpen ? 'opacity-0 -translate-x-32 w-0 md:opacity-100 md:translate-x-0 md:w-auto' : 'opacity-100 translate-x-0 w-auto'} p-2 flex flex-col gap-3 list-none transition-all duration-500 ease-in-out-wobble`}>
 
                 <li className='flex gap-2 items-center justify-start relative -translate-x-20 animate-slide-in' style={{ animationDelay: "2044ms" }}>
                     <ClassicButton
@@ -34,7 +47,7 @@ const Navbar = () => {
                         </a>
 
                     </ClassicButton>
-                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-500 -mr-28 text-secondary font-medium`}>Home</div>
+                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-300 ease-in-out-wobble -mr-28 text-secondary font-medium`}>Home</div>
                 </li>
                 <li className='flex gap-2 items-center justify-start relative -translate-x-20 animate-slide-in' style={{ animationDelay: "2066ms" }}>
                     <ClassicButton
@@ -45,7 +58,7 @@ const Navbar = () => {
                         </a>
 
                     </ClassicButton>
-                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-500 -mr-28 text-secondary font-medium`}>About</div>
+                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-300 ease-in-out-wobble -mr-28 text-secondary font-medium`}>About</div>
                 </li>
                 <li className='flex gap-2 items-center justify-start relative -translate-x-20 animate-slide-in' style={{ animationDelay: "2088ms" }}>
                     <ClassicButton
@@ -55,7 +68,7 @@ const Navbar = () => {
                             <SkillsIcon className="w-5 h-5" />
                         </a>
                     </ClassicButton>
-                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-500 -mr-28 text-secondary font-medium`}>Skills</div>
+                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-300 ease-in-out-wobble -mr-28 text-secondary font-medium`}>Skills</div>
                 </li>
                 <li className='flex gap-2 items-center justify-start relative -translate-x-20 animate-slide-in' style={{ animationDelay: "2110ms" }}>
                     <ClassicButton
@@ -65,7 +78,7 @@ const Navbar = () => {
                             <ProjectsIcon className="w-5 h-5" />
                         </a>
                     </ClassicButton>
-                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-500 -mr-32 text-secondary font-medium`}>Projects</div>
+                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-300 ease-in-out-wobble -mr-32 text-secondary font-medium`}>Projects</div>
                 </li>
                 <li className='flex gap-2 items-center justify-start relative -translate-x-20 animate-slide-in' style={{ animationDelay: "2132ms" }}>
                     <ClassicButton
@@ -75,7 +88,7 @@ const Navbar = () => {
                             <ContactIcon className="w-5 h-5" />
                         </a>
                     </ClassicButton>
-                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-500 -mr-32 text-secondary font-medium`}>Contact</div>
+                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-300 ease-in-out-wobble -mr-32 text-secondary font-medium`}>Contact</div>
                 </li>
             </ul>
         </nav>
