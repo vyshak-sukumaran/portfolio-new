@@ -44,7 +44,7 @@ const Projects = () => {
               <p className='grow font-sora text-sm text-justify pt-2 text-black'>A social networking site for Companies, Professionals, Students, Freelancers and Entrepreneurs</p>
               <p className='grow font-sora text-sm text-justify pt-1 text-black'>
                 <span className='font-bold'>Tech and tools : </span>React js, Material ui, Styled components, Swr, Django, Django rest framework, Postgres, Redis, Aws</p>
-              <div className='shrink pt-2'>
+              <div className='shrink pt-2 w-fit'>
                 <a href="https://www.kaarmy.com" target="_blank" rel="noopener noreferrer">
                   <ClassicButton small>Visit</ClassicButton>
                 </a>
@@ -61,7 +61,7 @@ const Projects = () => {
               <p className='grow font-sora text-sm text-justify pt-2 text-black'>A static Operating System UI prototype inspired from some of the linux distros I&apos;ve used.</p>
               <p className='grow font-sora text-sm text-justify pt-1 text-black'>
                 <span className='font-bold'>Tech and tools : </span>React js, Styled components, Figma, Netlify</p>
-              <div className='shrink pt-2'>
+              <div className='shrink pt-2 w-fit'>
                 <a href="https://os20.netlify.app/" target="_blank" rel="noopener noreferrer">
                   <ClassicButton small>Visit</ClassicButton>
                 </a>
