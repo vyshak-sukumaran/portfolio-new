@@ -12,7 +12,7 @@ const About = () => {
             sm:max-w-md lg:flex-row lg:max-w-2xl xl:max-w-3xl">
                 <div className="basis-2/5 p-2 flex justify-center items-center">
                     <div className="w-32 h-32 rounded-full overflow-hidden border-[3px] shadow-blue border-secondary relative pointer-events-none lg:w-36 lg:h-36 xl:w-44 xl:h-44">
-                        <Image src="https://ucarecdn.com/d95ea986-cc01-42d7-8dc3-9fea52558cdf/vyshak1.png" alt='me' layout='fill' />
+                        <Image priority src="https://ucarecdn.com/d95ea986-cc01-42d7-8dc3-9fea52558cdf/vyshak1.png" alt='me' layout='fill' />
                     </div>
                 </div>
                 <div className="basis-3/5 p-2 flex flex-col justify-center gap-8 lg:pr-5">
