@@ -6,7 +6,7 @@ const Skills = () => {
   const ref = useRef(null)
   const intersecting = useIntersectionObserver(ref, {})
   return (
-    <div id='skills' className='w-full min-h-[500px] relative'>
+    <div id='skills' className='w-full min-h-[600px] relative'>
       <div className="w-11/12 max-w-md mx-auto pt-10 flex flex-col gap-5 lg:max-w-2xl lg:flex-row xl:max-w-4xl">
         <div className='basis-1/3 flex flex-row gap-1 justify-center font-rubik text-2xl font-bold text-secondary lg:flex-col lg:text-7xl xl:text-8xl'>
 
