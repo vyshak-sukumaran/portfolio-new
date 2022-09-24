@@ -7,7 +7,7 @@ import BallIcon from '../../assets/football.svg'
 const Landing = () => {
 
   return (
-    <div id="home" className='w-full h-screen min-h-[600px] relative'>
+    <div id="home" className='w-full h-screen min-h-[600px] max-h-[800px] relative'>
 
       <div className='w-fit h-fit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center'>
         <AnimatedTitles />
