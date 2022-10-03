@@ -35,7 +35,7 @@ const SideNav = () => {
                     handleClick={handleToggle}
                 />
             </div>
-            <div className={`${!isOpen ? 'opacity-0 -translate-x-32 w-0' : 'opacity-100 -translate-x-3  w-64'} h-screen bg-moon absolute top-0 left-0 transition-all duration-500 ease-in-out-wobble`}></div>
+            <div className={`${!isOpen ? 'opacity-0 -translate-x-32 w-0' : 'opacity-100 -translate-x-3  w-64'} h-screen bg-gray-light absolute top-0 left-0 transition-all duration-500 ease-in-out-wobble`}></div>
             <ul className={`${!isOpen ? 'opacity-0 -translate-x-32 w-0 md:opacity-100 md:translate-x-0 md:w-auto' : 'opacity-100 translate-x-0 w-auto'} p-2 flex flex-col gap-3 list-none transition-all duration-500 ease-in-out-wobble`}>
 
                 <li className='flex gap-2 items-center justify-start relative -translate-x-20 animate-slide-in' style={{ animationDelay: "2044ms" }}>
@@ -47,7 +47,7 @@ const SideNav = () => {
                         </a>
 
                     </ClassicButton>
-                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-300 ease-in-out-wobble -mr-28 text-secondary font-medium`}>Home</div>
+                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-300 ease-in-out-wobble -mr-28 text-primary font-medium`}>Home</div>
                 </li>
                 <li className='flex gap-2 items-center justify-start relative -translate-x-20 animate-slide-in' style={{ animationDelay: "2066ms" }}>
                     <ClassicButton
@@ -58,7 +58,7 @@ const SideNav = () => {
                         </a>
 
                     </ClassicButton>
-                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-300 ease-in-out-wobble -mr-28 text-secondary font-medium`}>About</div>
+                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-300 ease-in-out-wobble -mr-28 text-primary font-medium`}>About</div>
                 </li>
                 <li className='flex gap-2 items-center justify-start relative -translate-x-20 animate-slide-in' style={{ animationDelay: "2088ms" }}>
                     <ClassicButton
@@ -68,7 +68,7 @@ const SideNav = () => {
                             <SkillsIcon className="w-5 h-5" />
                         </a>
                     </ClassicButton>
-                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-300 ease-in-out-wobble -mr-28 text-secondary font-medium`}>Skills</div>
+                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-300 ease-in-out-wobble -mr-28 text-primary font-medium`}>Skills</div>
                 </li>
                 <li className='flex gap-2 items-center justify-start relative -translate-x-20 animate-slide-in' style={{ animationDelay: "2110ms" }}>
                     <ClassicButton
@@ -78,7 +78,7 @@ const SideNav = () => {
                             <ProjectsIcon className="w-5 h-5" />
                         </a>
                     </ClassicButton>
-                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-300 ease-in-out-wobble -mr-32 text-secondary font-medium`}>Projects</div>
+                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-300 ease-in-out-wobble -mr-32 text-primary font-medium`}>Projects</div>
                 </li>
                 <li className='flex gap-2 items-center justify-start relative -translate-x-20 animate-slide-in' style={{ animationDelay: "2132ms" }}>
                     <ClassicButton
@@ -88,7 +88,7 @@ const SideNav = () => {
                             <ContactIcon className="w-5 h-5" />
                         </a>
                     </ClassicButton>
-                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-300 ease-in-out-wobble -mr-32 text-secondary font-medium`}>Contact</div>
+                    <div className={`${!isOpen ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"} transition-all duration-300 ease-in-out-wobble -mr-32 text-primary font-medium`}>Contact</div>
                 </li>
             </ul>
         </nav>

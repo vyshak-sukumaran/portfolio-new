@@ -10,28 +10,28 @@
     line-height: 4rem;
     letter-spacing: 3px;
     text-align: center;
-    color: var(--primary);
-    text-shadow: 1px -1px var(--secondary),  
-        0.8px -0.8px var(--secondary), 0.6px -0.6px var(--secondary),  
-        0.4px -0.4px var(--secondary), 0.2px -0.2px var(--secondary), 
-        -0.2px 0.2px var(--secondary), 
-        -0.4px 0.4px var(--secondary), -0.6px 0.6px var(--secondary),  
-        -0.8px 0.8px var(--secondary), -1px 1px var(--secondary),
-        -1.2px 1.2px var(--secondary), -1.4px 1.4px var(--secondary), 
-        -1.6px 1.6px var(--secondary), -1.8px 1.8px var(--secondary), 
-        -2px 2px var(--secondary), -2.2px 2.2px var(--secondary), 
-        -2.4px 2.4px var(--secondary), -2.6px 2.6px var(--secondary), 
-        -2.8px 2.8px var(--secondary), -3px 3px var(--secondary),
-        -3.2px 3.2px var(--secondary), -3.4px 3.4px var(--secondary), 
-        -3.6px 3.6px var(--secondary), -3.8px 3.8px var(--secondary),
-        -4px 4px var(--secondary), -4.2px 4.2px var(--secondary), 
-        -4.4px 4.4px var(--secondary), -4.6px 4.6px var(--secondary), 
-        -4.8px 4.8px var(--secondary), -5px 5px var(--secondary),
-        -5.2px 5.2px var(--secondary), -5.4px 5.4px var(--secondary), 
-        -5.6px 5.6px var(--secondary), -5.8px 5.8px var(--secondary), 
-        -6px 6px var(--secondary), -6.2px 6.2px var(--secondary), 
-        -6.4px 6.4px var(--secondary), -6.6px 6.6px var(--secondary), 
-        -6.8px 6.8px var(--secondary), -7px 7px var(--secondary);
+    color: var(--secondary);
+    text-shadow: 1px -1px var(--primary),  
+        0.8px -0.8px var(--primary), 0.6px -0.6px var(--primary),  
+        0.4px -0.4px var(--primary), 0.2px -0.2px var(--primary), 
+        -0.2px 0.2px var(--primary), 
+        -0.4px 0.4px var(--primary), -0.6px 0.6px var(--primary),  
+        -0.8px 0.8px var(--primary), -1px 1px var(--primary),
+        -1.2px 1.2px var(--primary), -1.4px 1.4px var(--primary), 
+        -1.6px 1.6px var(--primary), -1.8px 1.8px var(--primary), 
+        -2px 2px var(--primary), -2.2px 2.2px var(--primary), 
+        -2.4px 2.4px var(--primary), -2.6px 2.6px var(--primary), 
+        -2.8px 2.8px var(--primary), -3px 3px var(--primary),
+        -3.2px 3.2px var(--primary), -3.4px 3.4px var(--primary), 
+        -3.6px 3.6px var(--primary), -3.8px 3.8px var(--primary),
+        -4px 4px var(--primary), -4.2px 4.2px var(--primary), 
+        -4.4px 4.4px var(--primary), -4.6px 4.6px var(--primary), 
+        -4.8px 4.8px var(--primary), -5px 5px var(--primary),
+        -5.2px 5.2px var(--primary), -5.4px 5.4px var(--primary), 
+        -5.6px 5.6px var(--primary), -5.8px 5.8px var(--primary), 
+        -6px 6px var(--primary), -6.2px 6.2px var(--primary), 
+        -6.4px 6.4px var(--primary), -6.6px 6.6px var(--primary), 
+        -6.8px 6.8px var(--primary), -7px 7px var(--primary);
     overflow: hidden;
     padding: 0 20px 10px 20px;
 }
@@ -64,14 +64,14 @@
     .title {
         font-size: 4.5rem;
         line-height: 6rem;
-        text-shadow: 2px -2px var(--secondary), 1.5px -1.5px var(--secondary), 1px -1px var(--secondary),
-            -1px 1px var(--secondary), -1.5px 1.5px var(--secondary), -2px 2px var(--secondary), 
-            -2.5px 2.5px var(--secondary), -3px 3px var(--secondary), -3.5px 3.5px var(--secondary),
-            -4px 4px var(--secondary), -4.5px 4.5px var(--secondary), -5px 5px var(--secondary), 
-            -5.5px 5.5px var(--secondary), -6px 6px var(--secondary), -6.5px 6.5px var(--secondary),
-            -7px 7px var(--secondary), -7.5px 7.5px var(--secondary), -8px 8px var(--secondary), 
-            -8.5px 8.5px var(--secondary), -9px 9px var(--secondary), -9.5px 9.5px var(--secondary),
-            -10px 10px var(--secondary);
+        text-shadow: 2px -2px var(--primary), 1.5px -1.5px var(--primary), 1px -1px var(--primary),
+            -1px 1px var(--primary), -1.5px 1.5px var(--primary), -2px 2px var(--primary), 
+            -2.5px 2.5px var(--primary), -3px 3px var(--primary), -3.5px 3.5px var(--primary),
+            -4px 4px var(--primary), -4.5px 4.5px var(--primary), -5px 5px var(--primary), 
+            -5.5px 5.5px var(--primary), -6px 6px var(--primary), -6.5px 6.5px var(--primary),
+            -7px 7px var(--primary), -7.5px 7.5px var(--primary), -8px 8px var(--primary), 
+            -8.5px 8.5px var(--primary), -9px 9px var(--primary), -9.5px 9.5px var(--primary),
+            -10px 10px var(--primary);
     }
 }
 
@@ -79,12 +79,12 @@
     .title {
         font-size: 6rem;
         line-height: 8rem;
-        text-shadow: 3px -3px var(--secondary),
-            2px -2px var(--secondary), 1px -1px var(--secondary),
-            -1px 1px var(--secondary), -2px 2px var(--secondary), -3px 3px var(--secondary),
-            -4px 4px var(--secondary), -5px 5px var(--secondary), -6px 6px var(--secondary),
-            -7px 7px var(--secondary), -8px 8px var(--secondary), -9px 9px var(--secondary),
-            -10px 10px var(--secondary), -11px 11px var(--secondary), -12px 12px var(--secondary),
-            -13px 13px var(--secondary);
+        text-shadow: 3px -3px var(--primary),
+            2px -2px var(--primary), 1px -1px var(--primary),
+            -1px 1px var(--primary), -2px 2px var(--primary), -3px 3px var(--primary),
+            -4px 4px var(--primary), -5px 5px var(--primary), -6px 6px var(--primary),
+            -7px 7px var(--primary), -8px 8px var(--primary), -9px 9px var(--primary),
+            -10px 10px var(--primary), -11px 11px var(--primary), -12px 12px var(--primary),
+            -13px 13px var(--primary);
     }
 }

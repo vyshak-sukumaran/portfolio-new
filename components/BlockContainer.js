@@ -27,7 +27,7 @@ const BlockContainer = ({ children, ...customMeta }) => {
                     rel="canonical"
                     href={`https://vyshaksukumaran.online${router.asPath}`}
                 />
-                <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+                <link rel="icon" type="image/svg+xml" href="/logo.svg" />
                 <meta property="og:type" content={meta.type} />
                 <meta property="og:site_name" content="Manu Arora" />
                 <meta property="og:description" content={meta.description} />
@@ -44,7 +44,7 @@ const BlockContainer = ({ children, ...customMeta }) => {
 
 
             </Head>
-            <main className='max-w-[1366px] h-max bg-white mx-auto relative 2xl:border-x-[1px] 2xl:border-grey'>
+            <main className='max-w-[1266px] h-max bg-white mx-auto relative 2xl:border-x-[1px] 2xl:border-gray'>
                 {children}
             </main>
         </>
