@@ -44,9 +44,21 @@ module.exports = {
         'spin-slow': 'spin 3s linear infinite',
         'slide-up': 'slideup 1000ms cubic-bezier(0.65, 0, 0.35, 1) 1 forwards',
         'rise-up': 'riseup 1000ms cubic-bezier(0.21, 0.44, 0.4, 0.96) 1 forwards',
-        'progress': 'prog 5000ms linear 1 forwards'
+        'progress': 'prog 5000ms linear 1 forwards',
+        'spacing': 'space 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 2200ms 1 forwards'
       },
       keyframes: {
+        space: {
+          "0%": {
+            opacity: 0,
+            letterSpacing: 20
+        },
+    
+        "100%": {
+            opacity: 1,
+            letterSpacing: 3
+        }
+        },
         prog: {
           "0%": {
             width: "100%"

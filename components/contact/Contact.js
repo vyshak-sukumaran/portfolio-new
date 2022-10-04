@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
 import useIntersectionObserver from '../../utils/useIntersectionObserver';
-import ClassicButton from '../buttons/ClassicButton';
 import SentIcon from '../../assets/sent.svg'
 import AlertIcon from '../../assets/alert.svg'
 import CloseIcon from '../../assets/close.svg'
@@ -84,7 +83,7 @@ const Contact = () => {
   }, [showToast])
 
   return (
-    <div id="contact" className='w-full min-h-[700px] relative'>
+    <div id="contact" className='w-full min-h-[700px] relative p-2'>
       <div className="h-24 w-full"></div>
       {/* snack bar */}
       <div ref={toastRef} className={`fixed top-3 right-5 z-50 w-[21rem] h-24 box-border bg-white rounded-lg border-[1px] border-gray shadow-md overflow-hidden flex justify-center transition-all duration-500 ease-in-out-wobble ${!showToast ? "translate-x-[calc(100%+1.25rem)]" : "translate-x-0"}`}>
@@ -115,9 +114,9 @@ const Contact = () => {
         <div id="progress" className={`absolute bottom-0 left-0 w-full h-1 bg-primary `} style={{ animationDelay: "500ms" }}></div>
       </div>
       {/* snackbar end */}
-      <div className="w-2/3 h-full mx-auto">
+      <div className="w-full max-w-5xl h-full mx-auto">
         <header>
-          <h1 ref={intersectionRef} className="text-4xl text-primary uppercase font-rubik font-bold tracking-wider leading-tight text-center">
+          <h1 ref={intersectionRef} className="text-xl text-primary uppercase font-rubik font-bold tracking-wider leading-tight text-center md:text-2xl lg:text-3xl xl:text-4xl">
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "022ms" }}>C</span>
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "122ms" }}>o</span>
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "222ms" }}>n</span>
@@ -131,14 +130,14 @@ const Contact = () => {
             {/* <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "1022ms" }}>👋</span> */}
           </h1>
           <br />
-          <h2 className='text-center text-xl font-medium'>Want to work together or have any questions?</h2>
+          <h2 className='text-center text-base text-black font-medium'>Want to work together or have any questions?</h2>
         </header>
         <br /><br />
         <div className='w-full box-border h-fit max-w-2xl mx-auto'>
-          <form className='flex flex-col gap-4' ref={formRef} onSubmit={handleSubmit}>
-            <div className='flex gap-4'>
+          <form className='flex flex-col gap-2' ref={formRef} onSubmit={handleSubmit}>
+            <div className='flex gap-2'>
               <input
-                className='w-full p-4 border-[3px] bg-white border-primary rounded-md active:outline-none focus-within:outline-none'
+                className='w-full p-4 border-[3px] text-black bg-white border-primary rounded-md active:outline-none focus-within:outline-none'
                 type="text"
                 placeholder='Full name'
                 required
@@ -152,7 +151,7 @@ const Contact = () => {
                 }}
               />
               <input
-                className='w-full p-4 border-[3px] bg-white border-primary rounded-md active:outline-none focus-within:outline-none'
+                className='w-full p-4 border-[3px] text-black bg-white border-primary rounded-md active:outline-none focus-within:outline-none'
                 type="email"
                 placeholder='Email'
                 required
@@ -167,7 +166,7 @@ const Contact = () => {
               />
             </div>
             <textarea
-              className='w-full p-4 border-[3px] bg-white border-primary rounded-md focus-within:outline-none resize-none'
+              className='w-full p-4 border-[3px] text-black bg-white border-primary rounded-md focus-within:outline-none resize-none'
               placeholder='Message'
               rows={8}
               required
@@ -180,7 +179,7 @@ const Contact = () => {
                 }))
               }}
             />
-            <div className='w-80 mx-auto'>
+            <div className='w-full max-w-sm mx-auto'>
               <Button
                 fullWidth
                 size="large"
