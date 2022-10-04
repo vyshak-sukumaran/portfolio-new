@@ -15,7 +15,7 @@
 /* curtain reveal */
 .curtain {
     position: fixed;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     width: 100vw;
     min-height: 100vh;
     top: 0px;

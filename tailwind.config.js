@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -6,18 +9,23 @@ module.exports = {
   ],
   theme: {
     colors: {
-      primary: '#00ADE7',
-      secondary: '#151B72',
-      white: '#ffffff',
-      moon: '#defcf9',
-      grey: '#d9dcdd',
       black: '#000000',
-      transparent: 'transparent'
+      transparent: 'transparent',
+      white: '#ffffff',
+      primary: '#151B72',
+      secondary: '#00ADE7',
+      moon: '#defcf9',
+      gray: {
+        light: '#f1f5f9',
+        DEFAULT: '#cbd5e1',
+        dark: '#64748b'
+      }
     },
     fontFamily: {
+      inter: ['Inter var', ...defaultTheme.fontFamily.sans],
       rubik: ['Rubik', 'sans-serif'],
-      funky: ['Luckiest Guy', 'cursive'],
-      sora: ['Sora', 'sans-serif']
+      ibm: ['IBM Plex Sans', 'sans-serif'],
+      funky: ['Luckiest Guy', 'cursive']
     },
     extend: {
       boxShadow: {
@@ -26,8 +34,9 @@ module.exports = {
       blur: {
         xs: '2px',
       },
-      transitionTimingFunction:{
-        'in-out-wobble': 'cubic-bezier(.68,-0.55,0.26,1.35)'
+      transitionTimingFunction: {
+        'in-out-wobble': 'cubic-bezier(.68,-0.55,0.26,1.35)',
+        'down': 'cubic-bezier(.165,.84,.44,1)',
       },
       animation: {
         'slide-in': 'slide 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1 forwards',
@@ -35,9 +44,21 @@ module.exports = {
         'spin-slow': 'spin 3s linear infinite',
         'slide-up': 'slideup 1000ms cubic-bezier(0.65, 0, 0.35, 1) 1 forwards',
         'rise-up': 'riseup 1000ms cubic-bezier(0.21, 0.44, 0.4, 0.96) 1 forwards',
-        'progress': 'prog 5000ms linear 1 forwards'
+        'progress': 'prog 5000ms linear 1 forwards',
+        'spacing': 'space 1000ms cubic-bezier(0.075, 0.82, 0.165, 1) 2200ms 1 forwards'
       },
       keyframes: {
+        space: {
+          "0%": {
+            opacity: 0,
+            letterSpacing: 20
+        },
+    
+        "100%": {
+            opacity: 1,
+            letterSpacing: 3
+        }
+        },
         prog: {
           "0%": {
             width: "100%"
@@ -61,12 +82,12 @@ module.exports = {
         },
         wob: {
           '0%': { transform: 'scaleX(1) scaleY(1)' },
-          '50%': { 
-            transform: 'scaleX(0.7) scaleY(1.3)' ,
+          '50%': {
+            transform: 'scaleX(0.7) scaleY(1.3)',
             opacity: 1
           },
-          '100%': { 
-            transform: 'scaleX(1) scaleY(1)' ,
+          '100%': {
+            transform: 'scaleX(1) scaleY(1)',
             opacity: 1
           },
         },
@@ -76,10 +97,10 @@ module.exports = {
           }
         },
         slideup: {
-          '0%' : {
+          '0%': {
             transform: 'translateY(200px) rotate(20deg)'
           },
-          '100%' : {
+          '100%': {
             transform: 'translateY(0px) rotate(0deg)'
           },
         }

@@ -6,7 +6,7 @@
 }
 
 .cover {
-    background-color: var(--secondary);
+    background-color: var(--primary);
     height: 7.5rem;
     width: 8rem;
     position: absolute;

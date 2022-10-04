@@ -5,7 +5,7 @@ const HamburgerButton = ({ isOpen, handleClick }) => {
     return (
         <button
             type='button'
-            className='bg-primary w-12 h-12 rounded-full border-[3px] border-secondary'
+            className='bg-secondary w-12 h-12 rounded-full border-[3px] border-primary'
             onClick={handleClick}
         >
             <div className='relative w-full h-full'>
