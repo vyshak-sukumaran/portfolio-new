@@ -44,7 +44,7 @@ const BlockContainer = ({ children, ...customMeta }) => {
 
 
             </Head>
-            <main className='max-w-[1366px] h-max bg-white mx-auto relative 2xl:border-x-[1px] 2xl:border-gray'>
+            <main className='h-max w-full bg-white mx-auto relative'>
                 {children}
             </main>
         </>

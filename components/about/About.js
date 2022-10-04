@@ -26,7 +26,7 @@ const About = () => {
     const intersecting = useIntersectionObserver(ref, {})
 
     return (
-        <div id='about' className='w-full min-h-[700px] relative p-2'>
+        <div id='about' className='w-full min-h-[700px] relative p-4'>
             <div className="h-24 w-full"></div>
             <div className='w-full max-w-lg h-full mx-auto sm:max-w-xl md:max-w-3xl lg:max-w-5xl'>
                 <header>

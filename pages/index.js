@@ -43,7 +43,7 @@ export default function Home() {
 
 
 
-        <footer className="w-full max-w-[1366px] mx-auto h-fit p-6 pt-20 bg-white flex flex-col justify-center items-center gap-4 relative">
+        <footer className="w-full max-w-7xl mx-auto h-fit p-6 pt-20 bg-white flex flex-col justify-center items-center gap-4 relative">
           <ul className='list-none w-11/12 flex items-center text-white justify-center gap-10'>
             <li className='p-2 bg-gray-light rounded-full'>
               <a href="https://github.com/vyshak-sukumaran" target="_blank" rel="noopener noreferrer">
