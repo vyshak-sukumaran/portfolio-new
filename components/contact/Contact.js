@@ -84,7 +84,6 @@ const Contact = () => {
 
   return (
     <div id="contact" className='w-full min-h-[700px] relative p-4'>
-      <div className="h-24 w-full"></div>
       {/* snack bar */}
       <div ref={toastRef} className={`fixed top-3 right-5 z-50 w-[21rem] h-24 box-border bg-white rounded-lg border-[1px] border-gray shadow-md overflow-hidden flex justify-center transition-all duration-500 ease-in-out-wobble ${!showToast ? "translate-x-[calc(100%+1.25rem)]" : "translate-x-0"}`}>
         <div className='flex items-center justify-center gap-7'>
@@ -116,7 +115,7 @@ const Contact = () => {
       {/* snackbar end */}
       <div className="w-full max-w-5xl h-full mx-auto">
         <header>
-          <h1 ref={intersectionRef} className="text-xl text-primary uppercase font-rubik font-bold tracking-wider leading-tight text-center md:text-2xl lg:text-3xl xl:text-4xl">
+          <h1 ref={intersectionRef} className="text-xl text-primary uppercase font-rubik font-bold tracking-wider leading-tight py-3 text-center md:text-2xl lg:text-3xl xl:text-4xl">
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "022ms" }}>C</span>
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "122ms" }}>o</span>
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "222ms" }}>n</span>
