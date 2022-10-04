@@ -83,7 +83,7 @@ const Contact = () => {
   }, [showToast])
 
   return (
-    <div id="contact" className='w-full min-h-[700px] relative p-2'>
+    <div id="contact" className='w-full min-h-[700px] relative p-4'>
       <div className="h-24 w-full"></div>
       {/* snack bar */}
       <div ref={toastRef} className={`fixed top-3 right-5 z-50 w-[21rem] h-24 box-border bg-white rounded-lg border-[1px] border-gray shadow-md overflow-hidden flex justify-center transition-all duration-500 ease-in-out-wobble ${!showToast ? "translate-x-[calc(100%+1.25rem)]" : "translate-x-0"}`}>

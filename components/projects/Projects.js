@@ -6,7 +6,7 @@ const Projects = () => {
   const ref = useRef(null)
   const intersecting = useIntersectionObserver(ref, {})
   return (
-    <div id='projects' className='w-full min-h-[700px] relative p-2 pb-5 bg-gray-light'>
+    <div id='projects' className='w-full min-h-[700px] relative p-4 pb-5 bg-gray-light'>
       <div className="h-24 w-full"></div>
       <div className='w-full max-w-lg h-full mx-auto sm:max-w-xl md:max-w-3xl lg:max-w-5xl'>
         <header>
