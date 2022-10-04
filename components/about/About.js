@@ -27,7 +27,7 @@ const About = () => {
 
     return (
         <div id='about' className='w-full min-h-[700px] relative p-4'>
-            <div className="h-24 w-full"></div>
+            <div className="h-16 w-full"></div>
             <div className='w-full max-w-lg h-full mx-auto sm:max-w-xl md:max-w-3xl lg:max-w-5xl'>
                 <header>
                     <h1
@@ -87,7 +87,7 @@ const About = () => {
                         <SkillChip title="Styled" Icon={StyledIcon} />
                     </div>
                     <br />
-                    <p>Although I&apos;m more of a developer than a typical desiginer, I can design small projects with ease. Figma is the tool that I like most when it comes to designing. </p>
+                    <p>Although I&apos;m more of a developer than a typical designer, I can design small projects with ease. Figma is the tool that I like most when it comes to designing. </p>
                     <br />
                     <SkillChip title="Figma" Icon={FigmaIcon} />
                 </section>
@@ -99,7 +99,7 @@ const About = () => {
                     <br />
                     <p>My primary focus is on the development of all server-side logic, definition and maintenance of the central database, and ensuring high performance and responsiveness to requests from the front-end.</p>
                     <br />
-                    <p>I give priotity towards security and data protection when it comes to back-end. I like to optimize the application for maximum speed and scalability.</p>
+                    <p>I give priority towards security and data protection when it comes to back-end. I like to optimize the application for maximum speed and scalability.</p>
                 </section>
                 <br />
                 <section>

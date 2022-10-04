@@ -7,7 +7,6 @@ const Projects = () => {
   const intersecting = useIntersectionObserver(ref, {})
   return (
     <div id='projects' className='w-full min-h-[700px] relative p-4 pb-5 bg-gray-light'>
-      <div className="h-24 w-full"></div>
       <div className='w-full max-w-lg h-full mx-auto sm:max-w-xl md:max-w-3xl lg:max-w-5xl'>
         <header>
           <h1 ref={ref} className="text-xl uppercase font-bold font-rubik text-primary text-center block py-3 md:text-2xl lg:text-3xl xl:text-4xl">
