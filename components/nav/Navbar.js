@@ -23,7 +23,7 @@ const Navbar = () => {
     return (
         <>
             <nav className="w-full h-0 sticky top-0 left-0 z-50">
-                <div className='w-full h-16 max-w-7xl mx-auto box-border flex items-center'>
+                <div className='w-full h-16 max-w-[1366px] mx-auto box-border flex items-center'>
                     <div className='px-2 shrink-0 w-16 flex justify-center xl:w-20'>
                         <LogoIcon className="w-6 h-6 xl:w-8 xl:h-8" />
                     </div>
