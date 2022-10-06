@@ -97,9 +97,10 @@ const About = () => {
                     <br />
                     <p>I use Python for developing highly performant server side. I have good knowledge in Django framework and I felt it easy for creating Restful Apis using it.</p>
                     <br />
-                    <p>My primary focus is on the development of all server-side logic, definition and maintenance of the central database, and ensuring high performance and responsiveness to requests from the front-end.</p>
+                    <p>I like to ensure the performance of front-end is smooth by developing a back-end that consists of efficient business logic, well designed and manageable database schema and documented Api endpoints. This will make responsiveness to requests from front-end a lot more performant. I also have experience in using Docker which is very useful for maintaining and scaling large applications.</p>
                     <br />
                     <p>I give priority towards security and data protection when it comes to back-end. I like to optimize the application for maximum speed and scalability.</p>
+                    
                 </section>
                 <br />
                 <section>
