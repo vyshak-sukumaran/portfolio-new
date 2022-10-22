@@ -87,7 +87,7 @@ const About = () => {
                         <SkillChip title="Styled" Icon={StyledIcon} />
                     </div>
                     <br />
-                    <p>Although I&apos;m more of a developer than a typical designer, I can design small projects with ease. Figma is the tool that I like most when it comes to designing. </p>
+                    <p>Although I&apos;m more of a developer than a typical designer, I&apos;m a good designer too. Figma is the tool that I like most when it comes to designing. </p>
                     <br />
                     <SkillChip title="Figma" Icon={FigmaIcon} />
                 </section>
