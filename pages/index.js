@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import About from '../components/about/About'
 import Contact from '../components/contact/Contact'
 import Landing from '../components/home/Landing'
@@ -9,33 +9,24 @@ import InIcon from '../assets/in.svg'
 import Curtain from '../components/loading/Curtain'
 import BlockContainer from '../components/BlockContainer'
 import Navbar from '../components/nav/Navbar'
+import Skills from '../components/skills/Skills'
 
 export default function Home() {
-  const [loading, setLoading] = useState(true)
-  const loadingTime = 2000
-
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false)
-    }, loadingTime + 100);
-
-  }, [])
 
   return (
     <div id="main" className="bg-white w-full h-screen overflow-y-scroll overflow-x-hidden scroll-smooth">
 
       <BlockContainer>
 
-        {
-          loading && <Curtain />
-        }
+        <Curtain />
 
         <Navbar />
 
         <Landing />
 
         <About />
+
+        <Skills />
 
         <Projects />
 

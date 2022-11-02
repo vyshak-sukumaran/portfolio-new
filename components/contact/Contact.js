@@ -1,16 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react'
-import useIntersectionObserver from '../../utils/useIntersectionObserver';
+import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 import SentIcon from '../../assets/sent.svg'
 import AlertIcon from '../../assets/alert.svg'
 import CloseIcon from '../../assets/close.svg'
 import emailjs from '@emailjs/browser';
-import Button from '../buttons/Button';
+import { Button } from '../buttons/Button';
+import MyMap from './MyMap';
 
 let SERVICE_ID = process.env.SERVICE_ID
 let TEMPLATE_ID = process.env.TEMPLATE_ID
 let PUBLIC_KEY = process.env.PUBLIC_KEY
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false)
   let [formData, setFormData] = useState({
     from_name: "",
     from_email: "",
@@ -18,7 +20,6 @@ const Contact = () => {
   })
   const [showToast, setShowToast] = useState(false)
   const [err, setErr] = useState(false)
-  const [disabled, setDisabled] = useState(false)
 
   const intersectionRef = useRef(null)
   const formRef = useRef(null)
@@ -31,7 +32,7 @@ const Contact = () => {
 
     if (showToast) return
 
-    if (!disabled) setDisabled(true)
+    setLoading(true)
 
     emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY).then(
       (res) => {
@@ -41,12 +42,12 @@ const Contact = () => {
           from_email: "",
           message: ""
         })
-        setDisabled(false)
+        setLoading(false)
       }, (err) => {
         console.log(err);
         setShowToast(true)
         setErr(true)
-        setDisabled(false)
+        setLoading(false)
       }
     )
 
@@ -84,6 +85,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className='w-full min-h-[700px] relative p-4'>
+      <div className="h-12 w-full"></div>
       {/* snack bar */}
       <div ref={toastRef} className={`fixed top-3 right-5 z-50 w-[21rem] h-24 box-border bg-white rounded-lg border-[1px] border-gray shadow-md overflow-hidden flex justify-center transition-all duration-500 ease-in-out-wobble ${!showToast ? "translate-x-[calc(100%+1.25rem)]" : "translate-x-0"}`}>
         <div className='flex items-center justify-center gap-7'>
@@ -113,9 +115,12 @@ const Contact = () => {
         <div id="progress" className={`absolute bottom-0 left-0 w-full h-1 bg-primary `} style={{ animationDelay: "500ms" }}></div>
       </div>
       {/* snackbar end */}
-      <div className="w-full max-w-5xl h-full mx-auto">
+      <div className='w-full h-full mx-auto max-w-lg sm:max-w-4xl'>
         <header>
-          <h1 ref={intersectionRef} className="text-xl text-primary uppercase font-rubik font-bold tracking-wider leading-tight py-3 text-center md:text-2xl lg:text-3xl xl:text-4xl">
+          <h1
+            ref={intersectionRef}
+            className={`font-rubik font-bold text-2xl text-primary text-center uppercase md:text-3xl lg:text-4xl`}
+          >
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "022ms" }}>C</span>
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "122ms" }}>o</span>
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "222ms" }}>n</span>
@@ -129,12 +134,12 @@ const Contact = () => {
             {/* <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "1022ms" }}>👋</span> */}
           </h1>
           <br />
-          <h2 className='text-center text-base text-black font-medium'>Want to work together or have any questions?</h2>
+          <h2 className='text-center text-md text-black md:text-lg'>Want to work together or have any questions?</h2>
         </header>
         <br /><br />
-        <div className='w-full box-border h-fit max-w-2xl mx-auto'>
-          <form className='flex flex-col gap-2' ref={formRef} onSubmit={handleSubmit}>
-            <div className='flex gap-2'>
+        <div className='w-full box-border h-fit mx-auto flex gap-3 flex-col-reverse items-center md:flex-row xl:gap-5'>
+          <div className='w-full max-w-md'>
+            <form className='flex flex-col gap-2' ref={formRef} onSubmit={handleSubmit}>
               <input
                 className='w-full p-4 border-[3px] text-black bg-white border-primary rounded-md active:outline-none focus-within:outline-none'
                 type="text"
@@ -163,35 +168,56 @@ const Contact = () => {
                   }))
                 }}
               />
+              <textarea
+                className='w-full p-4 border-[3px] text-black bg-white border-primary rounded-md focus-within:outline-none resize-none'
+                placeholder='Message'
+                rows={7}
+                required
+                name="message"
+                value={formData.message}
+                onChange={(e) => {
+                  setFormData(prev => ({
+                    ...prev,
+                    message: e.target.value
+                  }))
+                }}
+              />
+              <div className='w-full max-w-[18rem] mx-auto relative'>
+                <Button
+                  fullWidth
+                  size="large"
+                  type="submit"
+                  disabled={loading}
+                >
+                  Send
+                </Button>
+
+                {
+                  loading &&
+                  <div className="absolute top-0 left-0 w-full h-full box-border rounded-full z-50 bg-primary flex items-center justify-center gap-2">
+                    <span className='block bg-white rounded-full w-3 h-3 animate-bounce' style={{ animationDelay: "0ms" }}></span>
+                    <span className='block bg-white rounded-full w-3 h-3 animate-bounce' style={{ animationDelay: "500ms" }}></span>
+                    <span className='block bg-white rounded-full w-3 h-3 animate-bounce' style={{ animationDelay: "0ms" }}></span>
+                  </div>
+                }
+              </div>
+            </form>
+          </div>
+          <div className='h-fit w-full relative max-w-md'>
+            <MyMap />
+            <div className="absolute top-2 right-2 w-fit h-fit bg-gray-light rounded-md">
+              <ul className='p-2 text-sm font-rubik text-black'>
+                <li className='text-md'>Vyshak T</li>
+                <li>Cherpulasssery, Kerala, India</li>
+                <br />
+                <li>@ : vyshaksukumaran2000@gmail.com</li>
+              </ul>
             </div>
-            <textarea
-              className='w-full p-4 border-[3px] text-black bg-white border-primary rounded-md focus-within:outline-none resize-none'
-              placeholder='Message'
-              rows={8}
-              required
-              name="message"
-              value={formData.message}
-              onChange={(e) => {
-                setFormData(prev => ({
-                  ...prev,
-                  message: e.target.value
-                }))
-              }}
-            />
-            <div className='w-full max-w-sm mx-auto'>
-              <Button
-                fullWidth
-                size="large"
-                type="submit"
-                disabled={disabled}
-              >
-                Send
-              </Button>
-            </div>
-          </form>
+          </div>
 
         </div>
       </div>
+      <div className="h-28 w-full"></div>
     </div>
   )
 }

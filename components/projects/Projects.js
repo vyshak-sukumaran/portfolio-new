@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import useIntersectionObserver from '../../utils/useIntersectionObserver'
+import useIntersectionObserver from '../../hooks/useIntersectionObserver'
 import ProjectCard from './ProjectCard'
 
 const Projects = () => {
@@ -7,7 +7,8 @@ const Projects = () => {
   const intersecting = useIntersectionObserver(ref, {})
   return (
     <div id='projects' className='w-full min-h-[700px] relative p-4 pb-5 bg-gray-light'>
-      <div className='w-full max-w-lg h-full mx-auto sm:max-w-xl md:max-w-3xl lg:max-w-5xl'>
+      <div className="h-12 w-full"></div>
+      <div className='w-full h-full mx-auto max-w-lg sm:max-w-4xl'>
         <header>
           <h1 ref={ref} className="text-xl uppercase font-bold font-rubik text-primary text-center block py-3 md:text-2xl lg:text-3xl xl:text-4xl">
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "022ms" }}>S</span>
@@ -36,7 +37,7 @@ const Projects = () => {
         </header>
         <br />
         <br />
-        <section>
+        <section className='flex gap-3 flex-wrap'>
           <div className={`w-fit h-fit box-border opacity-0 ${intersecting && 'animate-rise-up'}`} style={{ animationDelay: "500ms" }}>
             <ProjectCard
               image='https://ucarecdn.com/cd6afc5f-21f0-4f54-96be-6c0a4aa57083/kkkarmy.png'
@@ -46,7 +47,7 @@ const Projects = () => {
               link='https://www.kaarmy.com'
             />
           </div>
-          <br />
+
           <div className={`w-fit h-fit box-border opacity-0 ${intersecting && 'animate-rise-up'}`} style={{ animationDelay: "1000ms" }}>
             <ProjectCard
               image='https://ucarecdn.com/3c33ab8e-4369-4662-a3a8-53b8dd7fc85b/os20.png'

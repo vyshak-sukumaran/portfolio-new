@@ -1,23 +1,30 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import LogoIcon from '../../assets/logo.svg'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
+    const [animate, setAnimate] = useState(false)
+    const navRef = useRef(null)
+    
     const handleClick = () => {
         setOpen(!open)
     }
 
     useEffect(() => {
-        if (!open) return
+        const navElem = navRef.current
+        setAnimate(false)
+        if (!open || !navElem) return
 
-        const elem = document.querySelector("#main")
-        const handleScroll = () => {
-            setOpen(false)
+        const handleTransitionEnd = (e) => {
+            setAnimate(true)
         }
-        elem.addEventListener("scroll", handleScroll, false)
+        
+        navElem.addEventListener("transitionend", handleTransitionEnd)
+
         return () => {
-            elem.removeEventListener("scroll", handleScroll, false)
+            navElem.removeEventListener("transitionend", handleTransitionEnd)
         }
+        
     }, [open])
 
     return (
@@ -39,19 +46,27 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            <div className={`fixed z-40 top-0 left-0 bg-secondary w-full h-screen box-border transition-all ease-down duration-700 ${!open ? "opacity-0 -translate-y-[999px]" : "opacity-100 -translate-y-0"}`}>
-                <ul className='list-none p-2 mt-20 max-w-7xl mx-auto text-5xl tracking-wider text-black font-bold font-rubik leading-snug uppper lg:text-6xl lg:leading-normal'>
-                    <li className='hover:text-gray transition-all w-fit'>
-                        <a onClick={handleClick} href="#home">Home</a>
+            <div ref={navRef} className={`fixed z-40 top-0 left-0 bg-secondary w-full h-screen box-border transition-all ease-down duration-700 ${!open ? "opacity-0 -translate-y-[999px]" : "opacity-100 -translate-y-0"}`}>
+                <ul className='list-none p-2 mt-20 max-w-7xl mx-auto text-5xl tracking-wider text-black font-bold font-rubik leading-snug upper lg:text-6xl lg:leading-normal'>
+                    <li className='hover:text-gray transition-all w-fit overflow-hidden'>
+                        <div className={`translate-y-[200px] rotate-[20deg] origin-top-right ${animate && "animate-slide-up"}`} style={{ animationDelay: '0ms' }}>
+                            <a onClick={handleClick} href="#home">Home</a>
+                        </div>
                     </li>
-                    <li className='hover:text-gray transition-all w-fit'>
-                        <a onClick={handleClick} href="#about">About</a>
+                    <li className='hover:text-gray transition-all w-fit overflow-hidden'>
+                        <div className={`translate-y-[200px] rotate-[20deg] origin-top-right ${animate && "animate-slide-up"}`} style={{ animationDelay: '250ms' }}>
+                            <a onClick={handleClick} href="#about">About</a>
+                        </div>
                     </li>
-                    <li className='hover:text-gray transition-all w-fit'>
-                        <a onClick={handleClick} href="#projects">Works</a>
+                    <li className='hover:text-gray transition-all w-fit overflow-hidden'>
+                        <div className={`translate-y-[200px] rotate-[20deg] origin-top-right ${animate && "animate-slide-up"}`} style={{ animationDelay: '500ms' }}>
+                            <a onClick={handleClick} href="#projects">Works</a>
+                        </div>
                     </li>
-                    <li className='hover:text-gray transition-all w-fit'>
-                        <a onClick={handleClick} href="#contact">Contact</a>
+                    <li className='hover:text-gray transition-all w-fit overflow-hidden'>
+                        <div className={`translate-y-[200px] rotate-[20deg] origin-top-right ${animate && "animate-slide-up"}`} style={{ animationDelay: '750ms' }}>
+                            <a onClick={handleClick} href="#contact">Contact</a>
+                        </div>
                     </li>
                 </ul>
             </div>

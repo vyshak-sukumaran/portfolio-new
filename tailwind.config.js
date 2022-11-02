@@ -14,7 +14,8 @@ module.exports = {
       white: '#ffffff',
       primary: '#151B72',
       secondary: '#00ADE7',
-      moon: '#defcf9',
+      moon: '#EDFEFF',
+      sandal: '#F9F9F9',
       gray: {
         light: '#f1f5f9',
         DEFAULT: '#cbd5e1',

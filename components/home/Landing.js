@@ -9,7 +9,7 @@ const Landing = () => {
     <div id="home" className='w-full h-screen min-h-[600px] max-h-[800px] relative'>
 
       <div className="w-full max-w-[1366px] h-full mx-auto relative">
-        <div className='w-fit h-fit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-inter text-primary font-extrabold text-[2.5rem] tracking-wider leading-tight overflow-hidden sm:text-5xl sm:leading-snug lg:text-6xl xl:text-7xl'>
+        <div className='w-fit h-fit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-inter text-primary font-extrabold text-[2.5rem] tracking-wider leading-tight overflow-hidden sm:text-5xl lg:text-6xl xl:text-7xl'>
           <h1 className='tracking-[20px] animate-spacing'>I<span className='text-secondary'>&apos;</span>M</h1>
           <h1 className='tracking-[20px] animate-spacing'>VYSHAK</h1>
           <h1 className='tracking-[20px] animate-spacing'>SUKUMARAN<span className='text-secondary'>.</span></h1>
@@ -31,7 +31,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
-
+      <div className="h-28 w-full"></div>
     </div>
   )
 }
