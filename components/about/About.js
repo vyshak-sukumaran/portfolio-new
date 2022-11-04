@@ -30,7 +30,7 @@ const About = () => {
                         <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "922ms" }}>?</span>
                     </h1>
                 </header>
-                <section className='font-ibm text-sm text-black tracking-wide mt-8 flex flex-col-reverse sm:flex-row sm:gap-4 sm:text-base md:text-lg lg:text-xl'>
+                <section className='font-ibm text-sm text-black tracking-wide mt-10 flex flex-col-reverse sm:flex-row sm:gap-4 sm:text-base md:text-lg lg:text-xl'>
                     <aside className='mt-8 sm:mt-0'>
                         <div className='w-fit h-fit mx-auto'>
                             <figure className="overflow-hidden rounded-md relative pointer-events-none w-[166px] h-[222px] md:w-[200px] md:h-[266px] lg:w-[250px] lg:h-[333px]">

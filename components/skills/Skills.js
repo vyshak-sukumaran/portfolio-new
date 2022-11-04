@@ -45,7 +45,7 @@ const Skills = () => {
                         <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "822ms" }}>s</span>
                     </h1>
                 </header>
-                <section className='font-ibm text-sm text-black tracking-wide mt-8 flex flex-col gap-3 sm:text-base md:flex-row md:items-center md:text-lg lg:text-xl'>
+                <section className='font-ibm text-sm text-black tracking-wide mt-10 flex flex-col gap-3 sm:text-base md:flex-row md:items-center md:text-lg lg:text-xl'>
                     <div>
                         <h2 className='text-primary text-lg font-bold font-rubik lg:text-2xl'>Front-end</h2>
                         <br />

@@ -35,9 +35,7 @@ const Projects = () => {
             <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "2122ms" }}>t</span>
           </h1>
         </header>
-        <br />
-        <br />
-        <section className='flex gap-3 flex-wrap'>
+        <section className='flex gap-3 flex-wrap mt-10'>
           <div className={`w-fit h-fit box-border opacity-0 ${intersecting && 'animate-rise-up'}`} style={{ animationDelay: "500ms" }}>
             <ProjectCard
               image='https://ucarecdn.com/cd6afc5f-21f0-4f54-96be-6c0a4aa57083/kkkarmy.png'

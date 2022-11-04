@@ -136,8 +136,7 @@ const Contact = () => {
           <br />
           <h2 className='text-center text-md text-black md:text-lg'>Want to work together or have any questions?</h2>
         </header>
-        <br /><br />
-        <div className='w-full box-border h-fit mx-auto flex gap-5 flex-col items-center md:flex-row'>
+        <div className='w-full box-border mt-10 h-fit mx-auto flex gap-5 flex-col items-center md:flex-row'>
           <div className='w-full max-w-md'>
             <form className='flex flex-col gap-2' ref={formRef} onSubmit={handleSubmit}>
               <input
