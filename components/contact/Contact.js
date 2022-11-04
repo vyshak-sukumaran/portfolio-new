@@ -137,7 +137,7 @@ const Contact = () => {
           <h2 className='text-center text-md text-black md:text-lg'>Want to work together or have any questions?</h2>
         </header>
         <br /><br />
-        <div className='w-full box-border h-fit mx-auto flex gap-3 flex-col-reverse items-center md:flex-row xl:gap-5'>
+        <div className='w-full box-border h-fit mx-auto flex gap-5 flex-col items-center md:flex-row'>
           <div className='w-full max-w-md'>
             <form className='flex flex-col gap-2' ref={formRef} onSubmit={handleSubmit}>
               <input
@@ -217,7 +217,7 @@ const Contact = () => {
 
         </div>
       </div>
-      <div className="h-28 w-full"></div>
+      <div className="h-20 w-full"></div>
     </div>
   )
 }
