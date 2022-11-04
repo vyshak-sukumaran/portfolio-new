@@ -1,5 +1,8 @@
-import Image from 'next/image'
 import React, { useRef } from 'react'
+import Image from 'next/image'
+import GitIcon from '../../assets/git.svg'
+import TwitterIcon from '../../assets/twitter.svg'
+import InIcon from '../../assets/in.svg'
 import useIntersectionObserver from '../../hooks/useIntersectionObserver'
 
 const About = () => {
@@ -27,10 +30,10 @@ const About = () => {
                         <span className={`opacity-0 ${intersecting && 'inline-block animate-wobble'}`} style={{ animationDelay: "922ms" }}>?</span>
                     </h1>
                 </header>
-                <section className='font-ibm text-sm text-black tracking-wide mt-8 flex flex-col-reverse sm:flex-row sm:text-base md:text-lg lg:text-xl'>
-                    <aside className='pr-4 pb-2'>
-                        <div className='w-fit h-fit mx-auto mt-5 sm:mt-0'>
-                            <figure className="overflow-hidden border-2 border-white relative pointer-events-none w-[166px] h-[222px] md:w-[200px] md:h-[266px] lg:w-[250px] lg:h-[333px]">
+                <section className='font-ibm text-sm text-black tracking-wide mt-8 flex flex-col-reverse sm:flex-row sm:gap-4 sm:text-base md:text-lg lg:text-xl'>
+                    <aside className='mt-8 sm:mt-0'>
+                        <div className='w-fit h-fit mx-auto'>
+                            <figure className="overflow-hidden rounded-md relative pointer-events-none w-[166px] h-[222px] md:w-[200px] md:h-[266px] lg:w-[250px] lg:h-[333px]">
                                 <Image priority src="https://ucarecdn.com/ea43bcb7-73ba-4c2f-a7b5-12e3cd2641bc/vk.jpg" alt='me' layout='fill' />
                             </figure>
                         </div>
@@ -43,8 +46,28 @@ const About = () => {
                         <p>For me, look and feel is the most important thing when using web. That&apos;s why I give more focus towards front-end development nowadays.</p>
                     </div>
                 </section>
+                <br />
+                <div className='mt-4 sm:mt-8'>
+                    <ul className='list-none w-fit mx-auto flex items-center text-white justify-center gap-7'>
+                        <li className='p-2 bg-gray rounded-full transition-colors hover:bg-gray-light'>
+                            <a href="https://github.com/vyshak-sukumaran" target="_blank" rel="noopener noreferrer">
+                                <GitIcon className="w-5 h-5 fill-primary md:w-6 md:h-6" />
+                            </a>
+                        </li>
+                        <li className='p-2 bg-gray rounded-full transition-colors hover:bg-gray-light'>
+                            <a href="https://www.linkedin.com/in/vyshak-t-69b6671b8" target="_blank" rel="noopener noreferrer">
+                                <InIcon className="w-5 h-5 fill-primary md:w-6 md:h-6" />
+                            </a>
+                        </li>
+                        <li className='p-2 bg-gray rounded-full transition-colors hover:bg-gray-light'>
+                            <a href="https://mobile.twitter.com/VyshakS2000" target="_blank" rel="noopener noreferrer">
+                                <TwitterIcon className="w-5 h-5 fill-primary md:w-6 md:h-6" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div className="h-24 w-full"></div>
+            <div className="h-12 w-full"></div>
         </div>
     )
 }
