@@ -38,11 +38,12 @@ const Projects = () => {
         <section className='flex gap-3 flex-wrap mt-10'>
           <div className={`w-fit h-fit box-border opacity-0 ${intersecting && 'animate-rise-up'}`} style={{ animationDelay: "500ms" }}>
             <ProjectCard
-              image='https://ucarecdn.com/cd6afc5f-21f0-4f54-96be-6c0a4aa57083/kkkarmy.png'
-              title='Kaarmy'
-              body='A social networking site for Companies, Professionals, Students, Freelancers and Entrepreneurs.'
-              stack='React js, Material ui, Styled components, Swr, Django, Django rest framework, Postgres, Redis, Aws'
-              link='https://www.kaarmy.com'
+              image='https://ucarecdn.com/225cf3f4-e9c2-4fcd-bd4a-e1236d47236b/logo.svg'
+              title='Bashboard'
+              body='A collaborative canvas for users to make their creativity thrive with lot of drawing options.'
+              stack='React js, Node.js, Socket.io, Tailwind CSS, ShadCn'
+              link='https://bashboard-ten.vercel.app/'
+              isSvg
             />
           </div>
 
